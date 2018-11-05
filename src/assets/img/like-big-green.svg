@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ICON-赞-大/选中</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="0-切图/规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1305.000000, -948.000000)" fill="#36646E" fill-rule="nonzero" id="ICON-赞-大/默认">
+            <g transform="translate(1305.000000, 948.000000)">
+                <path d="M0,18 L3.27272727,18 L3.27272727,4.90909091 L0,4.90909091 L0,18 Z M0.818181818,15.5454545 L1.63636364,15.5454545 L1.63636364,16.3636364 L0.818181818,16.3636364 L0.818181818,15.5454545 Z M10.5329988,4.79927711 C10.7330078,4.23325301 10.8598952,3.6346988 10.8598952,2.99927711 C10.8598952,1.88891566 10.5265469,0.856626506 9.95662888,0 L6.38227519,0 C6.48120436,0.386024096 6.55002464,0.782891566 6.55002464,1.19927711 C6.55002464,2.64144578 5.90698508,3.91879518 4.90909091,4.79927711 L4.90909091,18 L18,18 L18,4.79927711 L10.5329988,4.79927711 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>箱子</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="4-3订单" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4-3短租单订单详情/待付款" transform="translate(-39.000000, -173.000000)" fill="#333333" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(39.000000, 173.000000)">
+                <g id="箱子">
+                    <path d="M5.47915027,0 L0.0343469967,2.43269138 L5.48471565,4.84654397 L10.9906375,2.42693292 L5.47915027,0 Z M0,8.37538934 L5.31295553,10.9820203 L5.31295553,5.15037471 L0,2.81771389 L0,8.37538934 Z M1.63006282,4.98013517 L3.67835751,5.96755578 L3.66623431,6.74599096 L1.6184547,5.75854429 L1.63006282,4.98013517 Z M5.70292084,5.15037471 L5.70292084,10.9820203 L10.9976978,8.37538934 L10.9976978,2.81771389 L5.70292084,5.15037471 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

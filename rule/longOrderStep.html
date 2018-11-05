@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title>长租租赁流程</title>
+		<script type="text/javascript">
+			function IsPC() {
+				var userAgentInfo = navigator.userAgent;
+				var Agents = ["Android", "iPhone",
+					"SymbianOS", "Windows Phone",
+					"iPad", "iPod"
+				];
+				var flag = true;
+				for(var v = 0; v < Agents.length; v++) {
+					if(userAgentInfo.indexOf(Agents[v]) > 0) {
+						flag = false;
+						break;
+					}
+				}
+				return flag;
+			};
+			var IFPCFLAG = IsPC();
+			if(IFPCFLAG) {
+				document.documentElement.style.fontSize = 640 / 18.75 + 'px';
+			} else {
+				document.documentElement.style.fontSize = window.innerWidth / 18.75 + 'px'
+				window.onresize = function() {
+					document.documentElement.style.fontSize = window.innerWidth / 18.75 + 'px'
+				}
+			};
+		</script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,
+			body {
+				font-family: '-apple-system', 'SF UI Text', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'sans-serif';
+				-webkit-font-smoothing: antialiased;
+				-webkit-tap-highlight-color: transparent;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				height: 100%;
+				width: 100%;
+				word-break: break-all;
+			}
+			
+			body {
+				font-size: 0.7rem;
+				line-height: 1.42857;
+				background: #f2f2f2;
+				-webkit-overflow-scrolling: touch;
+			}
+			
+			.text-left {
+				text-align: left;
+			}
+			
+			.text-right {
+				text-align: right;
+			}
+			
+			.text-center {
+				text-align: center;
+			}
+			
+			.float-left {
+				float: left;
+			}
+			
+			.float-right {
+				float: right;
+			}
+			
+			.vertical-top {
+				display: inline-block;
+				vertical-align: top;
+			}
+			
+			.vertical-middle {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			
+			.vertical-bottom {
+				display: inline-block;
+				vertical-align: bottom;
+			}
+			
+			.clearfix:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.font-bold {
+				font-weight: bold;
+			}
+			
+			.font-PFLight {
+				font-family: PingFangSC-Light;
+			}
+			
+			.font-12 {
+				font-size: 0.6rem;
+			}
+			
+			.font-14 {
+				font-size: 0.7rem;
+			}
+			
+			.font-16 {
+				font-size: 0.8rem;
+			}
+			
+			.font-18 {
+				font-size: 0.9rem;
+			}
+			
+			.font-20 {
+				font-size: 1rem;
+			}
+			
+			.font-22 {
+				font-size: 1.1rem;
+			}
+			
+			.font-979797 {
+				color: #979797;
+			}
+			
+			.font-4A4A4A {
+				color: #4A4A4A;
+			}
+			
+			.font-gray {
+				color: #808080;
+			}
+			
+			.font-darkGrey {
+				color: #323232;
+			}
+			
+			.font-FrenchGrey {
+				color: #CDCDCD;
+			}
+			
+			.font-white {
+				color: #ffffff;
+			}
+			
+			.font-black {
+				color: #000000;
+			}
+			
+			.font-blue {
+				color: #0E4F6A;
+			}
+			
+			.font-freshBlue {
+				color: #4A90E2;
+			}
+			
+			.font-green {
+				color: #23e8bd
+			}
+			
+			.font-deepGreen {
+				color: #16C49E;
+			}
+			
+			.font-red {
+				color: #ff0053;
+			}
+			
+			.font-deepRed {
+				color: #C34655;
+			}
+			
+			.font-yellow {
+				color: #f5a623;
+			}
+			
+			.font-orange {
+				color: #FDA00B;
+			}
+			
+			.font-weixin {
+				color: #00C802;
+			}
+			
+			.font-alipay {
+				color: #09A3E7;
+			}
+			
+			.font-zhima {
+				color: rgb(22, 187, 162);
+			}
+			
+			.bg-normal {
+				background-color: #f2f2f2;
+			}
+			
+			.bg-FrenchGrey {
+				background-color: #CDCDCD;
+			}
+			
+			.bg-buffer {
+				background-color: rgba(216, 216, 216, 0.30);
+			}
+			
+			.bg-gray {
+				background-color: #808080;
+			}
+			
+			.bg-d8d8d8 {
+				background-color: #d8d8d8;
+			}
+			
+			.bg-white {
+				background-color: #ffffff;
+			}
+			
+			.bg-black {
+				background-color: #000000;
+			}
+			
+			.bg-blue {
+				background-color: #0E4F6A;
+			}
+			
+			.bg-green {
+				background-color: #23e8bd
+			}
+			
+			.bg-red {
+				background-color: #ff0053;
+			}
+			
+			.bg-yellow {
+				background-color: #f5a623;
+			}
+			
+			.bg-gradient-blue {
+				background-image: -webkit-linear-gradient(left, #144F67, #072C3B);
+				background-image: -o-linear-gradient(left, #144F67, #072C3B);
+				background-image: -moz-linear-gradient(left, #144F67, #072C3B);
+				background-image: linear-gradient(to right, #144F67, #072C3B);
+			}
+			
+			.bg-search-header {
+				background: -webkit-linear-gradient(left, #144F67, #072C3B);
+				background: -o-linear-gradient(left, #144F67, #072C3B);
+				background: -moz-linear-gradient(left, #144F67, #072C3B);
+				background: linear-gradient(to right, #144F67, #072C3B);
+			}
+			
+			.bg-cover {
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+			
+			.bg-contain {
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+			
+			.bg-full {
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% 100%;
+			}
+			
+			.line-normal {
+				display: block;
+				width: 100%;
+				height: 1px;
+				-webkit-transform-origin: 0 0;
+				-moz-transform-origin: 0 0;
+				-ms-transform-origin: 0 0;
+				-o-transform-origin: 0 0;
+				transform-origin: 0 0;
+				-webkit-transform: scale(1, 0.5);
+				-ms-transform: scale(1, 0.5);
+				-o-transform: scale(1, 0.5);
+				transform: scale(1, 0.5);
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			
+			.top {
+				top: 0;
+			}
+			
+			.bottom {
+				bottom: 0;
+			}
+			
+			.left {
+				left: 0;
+			}
+			
+			.right {
+				right: 0;
+			}
+			
+			.center {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				white-space: nowrap;
+			}
+			
+			.fixed {
+				position: fixed;
+			}
+			
+			.relative {
+				position: relative;
+			}
+			
+			.absolute {
+				position: absolute;
+			}
+			
+			.block {
+				display: block;
+			}
+			
+			.inline-block {
+				display: inline-block;
+			}
+			
+			.displayHidden {
+				display: none;
+			}
+			
+			.width-full {
+				width: 100%;
+			}
+			
+			.height-full {
+				height: 100%;
+			}
+			
+			.border-box {
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+			}
+			
+			#page {
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				position: relative;
+				max-width: 640px;
+				min-height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.orderBill-page .head {
+				padding: 1.3rem 0 2rem 0;
+			}
+			
+			.orderBill-page .head .amount {
+				font-size: 1.7rem;
+				margin-top: 0.2rem;
+				margin-bottom: 0.9rem;
+				line-height: 1.41;
+				height: 2.4rem;
+			}
+			
+			.orderBill-page .head .amount.good {
+				background: url(../img/good-green.png) no-repeat center;
+				background-size: 1.3rem auto;
+			}
+			
+			.orderBill-page .btn-wrap {
+				margin-top: 1.4rem;
+			}
+			
+			.orderBill-page .btn-wrap .btn {
+				width: 5.15rem;
+				height: 1.85rem;
+				line-height: 1.85rem;
+				border-radius: 0.2rem;
+				border: 1px solid #16C39D;
+				margin: 0 0.55rem;
+			}
+			
+			.orderBill-page .btn-wrap .btn1 {
+				color: #16C39D;
+			}
+			
+			.orderBill-page .btn-wrap .btn2 {
+				background: #16C39D;
+			}
+			
+			.orderBill-page .orderBill-part2 {
+				position: relative;
+				padding: 0.5rem 0 0.45rem 0;
+				box-shadow: 0 0 0.15rem 0.05rem rgba(232, 232, 232, 0.51);
+			}
+			
+			.orderBill-page .orderBill-part2:after {
+				content: "";
+				position: absolute;
+				background: #CDCDCD;
+				top: 1rem;
+				bottom: 1rem;
+				left: 50%;
+				width: 1px;
+			}
+			
+			.orderBill-page .orderBill-part2 .orderBill-part2-item {
+				width: 49%;
+			}
+			
+			.orderBill-page .orderBill-item {
+				padding: 0.25rem 0.75rem;
+			}
+			
+			.orderBill-page .orderBill-item1 {
+				padding: 1.25rem 0.75rem 0.5rem 0.75rem;
+			}
+			
+			.orderBill-page .orderBill-item2 {
+				padding-top: 0.5rem;
+				padding-bottom: 0.5rem;
+			}
+			
+			.orderBill-page .orderBill-item.line2 {
+				width: auto;
+				padding: 0;
+				margin: 0.25rem 0.75rem;
+			}
+			/*orderBill end*/
+			/*longOrderStep start*/
+			
+			.longOrderStep-page .head {
+				padding: 0.75rem 1.365rem;
+			}
+			
+			.longOrderStep-page .part {
+				margin-bottom: 0.65rem;
+			}
+			
+			.longOrderStep-page .part .title,
+			.longOrderStep-page .part .content {
+				position: relative;
+				padding: 0.75rem 1.15rem 0.75rem 2rem;
+			}
+			
+			.longOrderStep-page .part .content {
+				line-height: 1.42;
+			}
+			
+			.longOrderStep-page .part .title {
+				padding-left: 1.95rem;
+			}
+			
+			.longOrderStep-page .part .title .num {
+				position: absolute;
+				font-weight: normal;
+				font-size: 0.5rem;
+				left: 0.75rem;
+				top: 0.9rem;
+				background: #50E3C2;
+				color: #FFFFFF;
+				width: 0.8rem;
+				height: 0.8rem;
+				border-radius: 100%;
+				text-align: center;
+				line-height: 0.8rem;
+			}
+			
+			.longOrderStep-page .part .box1 {
+				width: 15rem;
+				height: 3rem;
+				border: 1px solid #979797;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="page" class="longOrderStep-page">
+			<div class="head bg-white part">
+				<img class="block width-full" src="https://resource.tanwuapp.com/FqVb8_gv6LFcUFjpdXzTSXkWcEEe" />
+			</div>
+			<div class="part bg-white">
+				<div class="title font-darkGrey font-16 font-bold">
+					<span class="num">1</span> 选择所需产品
+					<span class="line-normal bg-FrenchGrey absolute left bottom"></span>
+				</div>
+				<div class="content font-gray">
+					选择产品租期，6、12月任选，长租体验更满足。
+				</div>
+			</div>
+			<div class="part bg-white">
+				<div class="title font-darkGrey font-16 font-bold">
+					<span class="num">2</span> 通过信用审核减免押金
+					<span class="line-normal bg-FrenchGrey absolute left bottom"></span>
+				</div>
+				<div class="content font-gray">
+					<p style="margin-bottom: 0.25rem;">
+						绑定芝麻信用获取押金减免特权，通过人工审核流程后，即可成功下单。
+					</p>
+					<p style="margin-bottom: 0.75rem;">在确认订单时预先支付押金可极大提高审核通过概率。</p>
+					<img style="width: 96%;" class="block" src="https://resource.tanwuapp.com/FoWNhDQa7e0b-nosgNaHtbijyc4w" />
+				</div>
+			</div>
+			<div class="part bg-white">
+				<div class="title font-darkGrey font-16 font-bold">
+					<span class="num">3</span> 每月主动支付月租
+					<span class="line-normal bg-FrenchGrey absolute left bottom"></span>
+				</div>
+				<div class="content font-gray">
+					<p style="margin-bottom: 0.75rem;">每月定期支付租金，资金无压力；</p>
+					<div class="box1 bg-contain" style="background-image:url(https://resource.tanwuapp.com/Fjyyu5cn6dfFacArXtIu61uU4BMb);width: 96%;"></div>
+					<p style="margin: 0.75rem 0;">下单时一次性全额支付租金还可享受9.8折优惠。</p>
+					<div class="text-center box1" style="width: 96%;">
+						<p class="font-darkGrey" style="padding: 0.6rem 0 0.1rem 0;">全额支付租金</p>
+						<p class="font-green" style="font-size: 0.5rem;">（可享受9.8折优惠）</p>
+					</div>
+				</div>
+			</div>
+			<div class="part bg-white" style="margin: 0;">
+				<div class="title font-darkGrey font-16 font-bold">
+					<span class="num">4</span> 租期到期方案
+					<span class="line-normal bg-FrenchGrey absolute left bottom"></span>
+				</div>
+				<div class="content font-gray">
+					<p style="margin-bottom: 0.4rem;">归还：产品到期可快递寄回或到门店自还。</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

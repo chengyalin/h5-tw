@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="探物">  
+		<meta name="description" content="探物">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">     
+		<meta content="yes" name="apple-mobile-web-app-capable">     
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">     
+		<meta content="telephone=no" name="format-detection">
+		<title>开学季 发福利</title>
+		<script src="../assets/js/init.js?v=1.5.8" type="text/javascript" charset="utf-8"></script>
+		<link rel="icon" type="image/x-icon" href="../assets/img/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/public.css"/>
+		<style type="text/css">
+			.backToSchool-page .product-list{
+				position: absolute;
+				top: 5.5rem;
+				left: 1.2rem;
+			}
+			.backToSchool-page .product-list .product-item{
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 0.2rem;
+				margin-bottom: 1.5rem;
+				width: 8rem;
+				height: 11rem;
+			} 
+			.backToSchool-page .contact-btn {
+				position: absolute;
+				bottom: 6rem;
+				height: 1.3rem;
+				text-align: center;
+				line-height: 1.3rem;
+				color: #FFFFFF;
+				font-size: 0.7rem;
+				letter-spacing: 0.2rem;
+				padding: 0 1.2rem;
+				left: 50%;
+				background: #0088f9;
+				border-radius: 2.6rem;
+				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+			}
+			.backToSchool-page .coupon-btn {
+				position: absolute;
+				bottom: 0.6rem;
+				height: 1.5rem;
+				text-align: center;
+				line-height: 1.5rem;
+				color: #032BB9;
+				font-size: 0.7rem;
+				letter-spacing: 0.2rem;
+				padding: 0 1.6rem;
+				left: 50%;
+				border-radius: 1.5rem;
+				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page" v-cloak class = "backToSchool-page relative">
+			<div class="relative">
+				<img class="width-full block" src="https://resource.tanwuapp.com/Fu1kV-pcq9WctFb1tuYMD9Y9rH4O"/>
+				<span class="coupon-btn" v-if="havingFlag == 'Y'">已领取</span>
+				<span class="coupon-btn" v-else @click="getCoupon">一键领取</span>
+			</div>
+			<div class="relative">
+				<img class="width-full block" src="https://resource.tanwuapp.com/FsnCJ5NSy_8Dl3488XBCIE3ys7n9"/>
+				<div class="product-list">
+					<a class="product-item" href="/#/productDetails?product_id=75&productId=75"></a>
+					<a class="product-item" href="/#/productDetails?product_id=55&productId=55"></a>
+					<a class="product-item" href="/#/productDetails?product_id=278&productId=278"></a>
+					<a class="product-item" href="/#/productDetails?product_id=62&productId=62"></a>
+					<a class="product-item" href="/#/productDetails?product_id=223&productId=223"></a>
+					<a class="product-item" href="/#/productDetails?product_id=197&productId=197"></a>
+				</div>
+			</div>
+			<div class="relative">
+				<img class="width-full block" src="https://resource.tanwuapp.com/FviDnQXPUeWw-NYrOl2zgialQm5J"/>
+				<span class="contact-btn" onclick="publicChat()">联系客服</span>
+			</div>
+		</div>
+		<script src="../assets/js/browser.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/vue-easy-toast.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/public.js?v=1.5.9" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var appUrl = location.href;
+			axios.get('https://150.api.tanwuapp.com/iOS/1.5.4'+'/wechat/signature', {
+			    params: {
+			      appUrl: appUrl
+			    }
+			  })
+			  .then(function (response) {
+			    var data = response.data;
+			    if(data.head && data.head.code == 0){
+			    		var details = data.details;
+			    		wx.config({  
+					    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。  
+					    appId: details.appId, // 必填，公众号的唯一标识  
+					    timestamp: details.timestamp, // 必填，生成签名的时间戳  
+					    nonceStr: details.noncestr, // 必填，生成签名的随机串  
+					    signature: details.signature,// 必填，签名，见附录1  
+					    jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+					});  
+					wx.ready(function(){  
+						var shareData = {
+							title:'开学季 发福利',
+							desc:'开学季福利，超低数码租赁尽情玩',
+							link:appUrl,
+							imgUrl:'https://resource.tanwuapp.com/Fhf2S3mLec5cayMzh6Lvbmb-n3oQ'
+						}
+						wx.onMenuShareTimeline(shareData);
+						wx.onMenuShareAppMessage(shareData); 
+						wx.onMenuShareQQ(shareData);
+						wx.onMenuShareWeibo(shareData);
+						wx.onMenuShareQZone(shareData);
+					});
+			    }
+			  })
+			  .catch(function (error) {
+			    //console.log(error);
+			  });
+		</script>
+		<script type="text/babel">
+			var page = new Vue({
+				el:'#page',
+	            data: {
+	            	 	askData:{
+		            		activityName:"backToSchool",
+		            	},
+		            	havingFlag:'N',
+	            		source:''
+	            },
+	            mounted: function(){
+	            		var that = this;
+	            		activityAllInit(that.activityInit);
+	            		var source = "";
+	            		if(getUrlParam("source")){
+		            		source = getUrlParam("source");
+		            		localStorage.setItem("source",source);
+		            	}
+	            		_czc.push(['_trackEvent', '开学季发福利', '访问',source]);
+	            		localStorage.setItem("opeActivityTag",'backToSchool_'+source);
+	            		var reqStr = {
+	            			activityName:that.askData.activityName,
+	            			source:source
+	            		};
+					axios({
+						method: 'post',
+						url: 'https://prepub.api.tanwuapp.com/iOS/2.0.0' + '/system/clientLog',
+						data: {
+							platform:'h5',
+							type:'info',
+							url:hostActivity + '/activity/extendInit',
+							reqStr:JSON.stringify(reqStr)
+						},
+						headers: {'Content-Type': 'application/json',version:'2.0.0',key:hex_md5("TWAPPTW")},
+					}).then(function (response) {
+						console.log(response);
+					})
+					
+	            },
+	            methods: {
+	            		goBack:function(){
+		            		var that = this;
+		            		if(document.referrer === ''){
+		            			window.location.href = '/'
+		            		}else{
+		            			window.history.go(-1);  
+		            		}
+		            	},
+		            	activityInit:function(){
+		            		var that = this;
+		            		postRequest(hostActivity + '/activity/extendInit',that.askData,true).then((res) => {
+		                		if(res.head.code == 0){
+		                			that.havingFlag = res.details.activityLogs && res.details.activityLogs.length?'Y':'N';
+		                		}
+						});
+		            	},
+		            getCoupon:function(){
+		            		var that = this;
+		            		if(localStorage.getItem("twUser")){
+		            			if(that.havingFlag == "Y") {
+									return false;
+							};
+							postRequest(hostActivity + '/activity/extendGrantCoupon',that.askData,true).then((res) => {
+			                		if(res.head.code == 0){
+			                			Vue.toast("领取成功",{className: ['myToast-warning']});
+									that.havingFlag = "Y";
+			                		}else if(res.head.code == 1){
+			                			that.goLogin();
+			                		}else{
+			                			Vue.toast(res.head.message,{className: ['myToast-warning']});
+			                		}
+							});
+		            		}else{
+		            			that.goLogin();
+		            		}
+		            	},
+		            	goLogin:function(){
+		            		var that = this;
+		            		window.location.href = "/#/login";
+		            	},
+	           }
+			});
+			initChat();
+		</script>
+	</body>
+</html>

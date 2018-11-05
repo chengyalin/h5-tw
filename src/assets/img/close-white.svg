@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>关闭/弹窗</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1-2短租" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-2-2短租属性-已选2/收起" transform="translate(-339.000000, -34.000000)" fill="#FFFFFF">
+            <g id="头部">
+                <g id="ICON-关闭/大fff" transform="translate(339.000000, 34.000000)">
+                    <path d="M8.0000036,6.6065716 L14.2704,0.336096 L15.66384,1.729552 L9.3934184,8.0000024 L15.66384,14.270496 L14.2704,15.663856 L8.0000036,9.3934236 L1.7296,15.663856 L0.336176,14.270496 L6.6065904,8.0000024 L0.336176,1.729552 L1.7296,0.336096 L8.0000036,6.6065716 Z" id="close"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

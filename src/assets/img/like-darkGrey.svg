@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ICON-赞/默认*0.6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="0-切图/规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.600000024">
+        <g transform="translate(-1174.000000, -947.000000)" fill="#DDDDDD" id="ICON-赞/默认*0.6">
+            <g transform="translate(1174.000000, 947.000000)">
+                <g id="ICON-赞/默认">
+                    <path d="M0,15 L3,15 L3,3.99939759 L0,3.99939759 L0,15 Z M0.99939759,12.9993976 L1.99879518,12.9993976 L1.99879518,13.9987952 L0.99939759,13.9987952 L0.99939759,12.9993976 Z M8.7253012,3.99939759 C8.89337349,3.52771084 9,3.02891566 9,2.49939759 C9,1.57409639 8.71987952,0.713855422 8.24096386,0 L5.2373494,0 C5.32048193,0.321686747 5.37831325,0.652409639 5.37831325,0.99939759 C5.37831325,2.20120482 4.83795181,3.26566265 3.99939759,3.99939759 L3.99939759,15 L15,15 L15,3.99939759 L8.7253012,3.99939759 Z" id="Shape" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

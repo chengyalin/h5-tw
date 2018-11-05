@@ -1,0 +1,1482 @@
+.font-Medium{
+	font-family: PingFangSC-Medium;
+}
+.font-Light{
+	font-family: PingFangSC-Light;
+}
+.backToIndex{
+	position: fixed;
+	right: 0.75rem;
+	bottom: 1rem;
+	width: 2rem;
+	height: 2rem;
+	background: #23E8BD url(../img/backToIndex.svg) no-repeat center;
+	background-size: 1rem ;
+	border-radius: 100%;
+	z-index: 10;
+	
+}
+.activity-part{
+	background: -webkit-linear-gradient(#353840, #1C2531, #131E2B); 
+    background: -o-linear-gradient(#353840, #1C2531, #131E2B); 
+    background: -moz-linear-gradient(#353840, #1C2531, #131E2B); 
+    background: linear-gradient(#353840, #1C2531, #131E2B); 
+}
+.activity-header{
+	position: relative;
+	height: 35.9rem;
+}
+.activity-header .bg{
+	display: block;
+	width: 100%;
+}
+.activity-header .content{
+	position: absolute;
+	left: 0.35rem;
+	right: 0.35rem;
+	top: 7rem;
+	padding: 0.67rem 0 0.75rem 0;
+	
+}
+.activity-header .content .bg-color{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.32;
+	z-index: 1;
+	background-image: -webkit-linear-gradient(-218deg, #2F3941 0%, #051525 90%, #001122 100%);
+	background-image: -moz-linear-gradient(-218deg, #2F3941 0%, #051525 90%, #001122 100%);
+	background-image: -o-linear-gradient(-218deg, #2F3941 0%, #051525 90%, #001122 100%);
+	background-image: linear-gradient(-218deg, #2F3941 0%, #051525 90%, #001122 100%);
+}
+.activity-detials-bg{
+	background: -webkit-linear-gradient(#353840, #1C2531, #131E2B); 
+    background: -o-linear-gradient(#353840, #1C2531, #131E2B); 
+    background: -moz-linear-gradient(#353840, #1C2531, #131E2B); 
+    background: linear-gradient(#353840, #1C2531, #131E2B); 
+}
+.activity-header .content .text{
+	font-family: PingFangSC-Medium;
+	position: relative;
+	z-index: 2;
+}
+.activity-header .content .text1{
+	font-size:1.375rem;
+	line-height: 1.1;
+}
+.activity-header .content .text2{
+	font-size: 0.875rem;
+	line-height: 1.08;
+	margin-bottom: 0.1rem;
+}
+.activity-header .content .text3{
+	font-family: PingFangSC-Semibold;
+	font-size: 2rem;
+	text-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.50);
+}
+.activity-header .content .text4{
+	font-family: PingFangSC-Light;
+	font-size: 0.61rem;
+	text-shadow: 0 0.05rem 0.4rem rgba(0,0,0,0.50);
+}
+.activity-header .content .h1{
+	display:block;
+	width: 74%;
+	margin:0 auto;
+}
+.activity-header .content .text5{
+	position:relative;
+	top:-0.1rem;
+	font-family: PingFangSC-Medium;
+	text-shadow: 0 0.05rem 0.1rem rgba(0,0,0,0.50);
+	line-height:1;
+}
+.activity-header .content .text6{
+	font-family: PingFangSC-Medium;
+	font-size:1.2rem;
+	line-height:1.3;
+}
+.activity-swipe{
+	width: 18rem;
+	height: 12.275rem;
+	margin: 0 auto 5rem auto;
+}
+.activity-part .coupon{
+	display: block;
+	width: 100%;
+}
+.activity-part .coupon-wrap{
+	margin:2.5rem 2.3rem 0 2.3rem;
+}
+.activity-part .coupon-tip{
+	opacity: 0.27;
+	font-family: PingFangSC-Regular;
+	font-size: 0.75rem;
+	color: #FFFFFF;
+	padding-top: 1.4rem;
+}
+.activity-part .coupon2{
+	width: 84%;
+}
+.activity-part .received-btn{
+	font-family: PingFangSC-Medium;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 5.5rem;
+	line-height: 5.5rem;
+	font-size: 1rem;
+	color: #f5a623;
+	letter-spacing: 0.1rem;
+}
+.activity-part .received-btn1,
+.activity-part .received-btn2{
+	background: #D8D8D8;
+	color: #2e343d;
+	width: 10rem;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	bottom: 1.35rem;
+	left: 50%;
+	margin-left: -5rem;
+	right: auto;
+	border-radius: 0.3rem;
+}
+.activity-part .received-btn2{
+	background: -webkit-linear-gradient(#f8c523, #fed824);
+    background: -o-linear-gradient(#f8c523, #fed824);
+    background: -moz-linear-gradient(#f8c523, #fed824); 
+    background: linear-gradient(#f8c523, #fed824); 
+}
+.activity-part .tip1{
+	font-family: PingFangSC-Light;
+	font-size: 0.7rem;
+	color: #68C8FF;
+	line-height: 1.5;
+	margin: 0 1.8rem;
+}
+.activity-part .btn1{
+	width: 10.8rem;
+	height: 2.22rem;
+	line-height: 2.22rem;
+	font-size: 1rem;
+	color: #50BFFF;
+	border: 0.1rem solid #50BFFF;
+	box-shadow: 0 0.05rem 0.4rem 0 rgba(255,255,255,0.52);
+	border-radius: 0.225rem;
+	margin: 0.9rem auto 3rem auto;
+}
+.activity-part .btn2{
+	display: inline-block;
+	width: 68%;
+	margin-bottom: 2rem;
+}
+.activity-part .btn3{
+	margin: 1.8rem 1.45rem 2.6rem 1.45rem;
+	height: 2.22rem;
+	line-height: 2.22rem;
+	font-size: 1rem;
+	color: #ffffff;
+	background: #50BFFF;
+	box-shadow: 0 0.05rem 0.1rem 0 rgba(255,255,255,0.34);
+	border-radius:0.2rem;
+}
+.activity-part .btn3-1{
+	margin-top: 0;
+}
+.activity-part .btn4{
+	font-family: PingFangSC-Light;
+	color: #68C8FF;
+	margin-top: 1.4rem;
+}
+.activity-part .share-wrap .title{
+	margin: 0 1.2rem 1.2rem 1.2rem;
+}
+.activity-part .share-wrap{
+	margin-top: 2rem;
+}
+.activity-part .shareImage-wrap{
+	width: 12rem;
+	height: 12rem;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+.activity-part .title-wrap{
+	position: relative;
+	margin: 0 1.45rem;
+	font-size: 0.95rem;
+	color: #FFFFFF;
+	letter-spacing: 0.11rem;
+	text-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.50);
+	font-family: PingFangSC-Thin;
+}
+.activity-part .title-wrap2{
+	margin-left: 0.8rem;
+	margin-right:0.8rem
+}
+.activity-part .title-wrap-self{
+	margin-bottom: 2.5rem;
+}
+.activity-part .title-wrap .image{
+	display: inline-block;
+	height: 3.2rem;
+	width: 3.2rem;
+	border-radius: 100%;
+	border: 0.05rem solid #979797;
+	background-color: #D8D8D8;
+}
+.activity-part .title-wrap .name{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -1.6rem;
+	text-align: center;
+}
+.activity-part .title-wrap span{
+	font-family: PingFangSC-Regular;
+}
+.activity-part .line{
+	position: absolute;
+	width: 3.83rem;
+	height: 0.05rem;
+	background: #fff;
+	top: 50%;
+	margin-top: -0.025rem;
+}
+.activity-part .line:before{
+	content: "";
+	position: absolute;
+	display: block;
+	top: -0.025rem;
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 100%;
+	background: #fff;
+}
+.activity-part .line1{
+	left: 0;
+	background: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1)); 
+    background: -o-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1)); 
+    background: -moz-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1)); 
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+}
+.activity-part .line2{
+	right: 0;
+	background: -webkit-linear-gradient(left,rgba(255,255,255,1),rgba(255,255,255,0)); 
+    background: -o-linear-gradient(right,rgba(255,255,255,1),rgba(255,255,255,0)); 
+    background: -moz-linear-gradient(right,rgba(255,255,255,1),rgba(255,255,255,0)); 
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+.activity-part .line1:before{
+	right: 0;
+}
+
+.activity-part .hasLogin .avatar{
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 100%;
+}
+.activity-part .hasLogin .name{
+	margin: 0.5rem 0 2rem 0;
+}
+.container-image{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+	padding-bottom: 0.4rem;
+}
+.container-image .small{
+	display: block;
+	background-color: rgba(255,255,255,0.2);
+	width: 6rem;
+	height: 6rem;
+	background-repeat:no-repeat ;
+	background-size:cover ;
+	background-position:center ;
+}
+.container-image .small-wrap{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction:column;
+	-webkit-flex-direction:column;
+	justify-content:space-between;
+	-webkit-justify-content:space-between;
+	width: 6rem;
+}
+.container-image .big{
+	display: block;
+	background-color: rgba(255,255,255,0.2);
+	width:12.4rem;
+	height: 12.4rem;
+	background-repeat:no-repeat ;
+	background-size:cover ;
+	background-position:center ;
+}
+.container-image .words{
+	position:absolute;
+	bottom:0.75rem;
+	font-family: PingFangSC-Light;
+}
+.container-image .words-right{
+	right:1rem;
+}
+.container-image .words-left{
+	left:1rem;
+}
+.activity-details-part .desc-part{
+	font-family: PingFangSC-Light;
+	text-align: left;
+	padding: 1.55rem 0.9rem 1.45rem 0.9rem;
+	margin-bottom: 4rem;
+}
+.activity-details-part .desc-part .text1{
+	font-size: 1rem;
+	margin-bottom: 0.7rem;
+}
+.activity-details-part .desc-part .text2{
+	font-size: 0.75rem;
+}
+.activity-details-part .tip1{
+	margin:1.4rem 0 0.65rem 0;
+	letter-spacing: 0;
+}
+.activity-details-part .photoes-wrap{
+	margin-top: 2rem;
+}
+.activity-details-part .hoverpic2{
+	width: 100%;
+	margin-bottom: 1.8rem;
+}
+.activity-details-part .words-list{
+	margin-top: 1.5rem;
+}
+.activity-details-part .words-list > li{
+	margin-top: 0.75rem;
+}
+.activity-details-part .words-list > li > span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.activity-details-part .words-list > li > .delimiter{
+	width: 0.1rem;
+	height: 0.65rem;
+	background: #fff;
+	margin: 0 0.75rem;
+}
+.activity-details-part .video-wrap{
+	width: 84%;
+	margin: 2rem auto 4rem auto;
+}
+.activity-details-part .video-wrap video{
+	width: 100%;
+}
+.activity-details-part .words-wrap{
+	border:1px solid #fff;
+	border-radius:0.2rem;
+	margin: 2.2rem 1.45rem 5rem 1.45rem;
+	padding:1.05rem 0.65rem 0.5rem 0.65rem;
+}
+.activity-details-part .words-wrap2{
+	border-color: #979797;
+	padding:0.7rem 0.7rem;
+	color: #979797;
+	line-height: 1.6;
+	border-radius:0.5rem;
+	margin: 1.4rem 1.25rem 2.95rem 1.25rem;
+	text-align: justify;
+	letter-spacing: -0.01rem;
+}
+.activity-details-part .words-wrap li{
+	font-family: PingFangSC-Light;
+	margin-bottom:0.5rem;
+	letter-spacing: -0.03rem;
+}
+.activity-part .foot-logo{
+	display:inline-block;
+	width:2.2rem;
+	margin-bottom:1rem;
+}
+.timeout-wrap{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 100;
+}
+.timeout-wrap .image{
+	background-image: url(../../activity/img/hovercameraGet.png);
+	height: 13.8rem;
+	width: 15.75rem;
+}
+.timeout-wrap .image .btn{
+	position: absolute;
+	width: 11.2rem;
+	height: 2rem;
+	line-height: 2rem;
+	background: #2A7197;
+	border-radius: 0.2rem;
+	bottom: 1rem;
+	left: 2.3rem;
+}
+.under-blur-wrap{
+	filter: blur(0.1rem);
+	-webkit-filter: blur(0.1rem);
+}
+.orderPay-alipay-toast{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 13.5rem;
+	padding-bottom: 3rem;
+    border-radius: 4px;
+    box-shadow:0px 2px 9px 0px rgba(0,0,0,0.22);
+    background-color:#fff!important;
+    color: #4e4e4e!important;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.orderPay-alipay-toast .title{
+	padding: 0.6rem 0.3rem;
+}
+.orderPay-alipay-toast .btn-wrap{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	display: -webkit-flex;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+.orderPay-alipay-toast .content{
+	padding: 0 0.75rem;
+	text-align: left;
+}
+.orderPay-alipay-toast .btn-wrap > span{
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+	padding: 0.7rem 0;
+	border-right: 1px solid rgba(0,0,0,0.1);
+}
+.orderPay-alipay-toast .btn-wrap > span:last-child{
+	border: none;
+}
+.activity-details-part .tip2{
+	letter-spacing: 0.1rem;
+	color: #CBCBCB;
+}
+.activity-details-part .tip2 .logout-btn{
+	color:#68c8ff;
+}
+.activity-details-part .tip3{
+	color: #CBCBCB;
+	margin: 0 2rem 1.95rem 2rem;
+	text-align: justify;
+	letter-spacing: -0.01rem;
+}
+.activity-details-part .inputBox{
+	display: block;
+	background: #D8D8D8;
+	border-radius: 0.2rem;
+	padding: 0.55rem 0.6rem;
+	width: 12.7rem;
+	height: 1rem;
+	color: #fff;
+	margin: 0 auto 0.8rem auto;
+}
+.activity-details-part .inputBox-wrap{
+	width: 13.9rem;
+	margin: 0 auto;
+}
+.activity-details-part .inputBox.short{
+	width: 7rem;
+}
+.activity-details-part .send-btn{
+	display: block;
+	height: 2rem;
+	color: #fff;
+	width: 4.6rem;
+	text-align: center;
+	line-height: 2rem;
+	background: #f5a623;
+	border-radius: 0.2rem;
+}
+.activity-details-part .login-wrap{
+	width: 13.9rem;
+	margin: 0 auto;
+}
+.activity-details-part .login-wrap .btn{
+	height: 2rem;
+	width: 6.2rem;
+	line-height: 2rem;
+	border-radius: 0.25rem;
+}
+.activity-details-part .login-wrap .btn-wrap{
+	margin-top: 1.5rem;
+}
+.activity-details-part .login-wrap .btn-login{
+	background: #68C8FF;
+}
+.activity-details-part .login-wrap .btn-register{
+	height: 1.9rem;
+	line-height: 1.9rem;
+	width: 6.1rem;
+	color: #68C8FF;
+	border: 1px solid #979797;
+}
+
+/*Nov11 start*/
+.Nov11-part{
+	background: #000043;
+}
+.Nov11-list{
+	padding: 0 0.1rem;
+}
+.Nov11-list > li{
+	width: 8.3rem;
+	height: 11.4rem;	
+	margin-left: 0.65rem;
+	margin-top: 0.5rem;
+	background: #fff;
+	border-radius: 0.25rem;
+	overflow: hidden;
+}
+.Nov11-list > li:first-child,
+.Nov11-list > li:nth-child(2){
+	margin-top: 0;
+}
+.Nov11-list .cover{
+	height: 6.65rem;
+	box-shadow: 0 0.05rem 0.1rem 0 rgba(228,228,228,0.30);
+}
+.Nov11-list .name{
+	font-family: PingFangSC-Regular;
+	font-size: 0.5rem;
+	margin: 0.55rem 0.6rem;
+	height: 1.25rem;
+	word-break: break-all;
+}
+.Nov11-list .content{
+	margin-left:0.65rem;
+	line-height: 1;
+}
+.Nov11-list .text1{
+	display: inline-block;
+	vertical-align: bottom;
+	padding-top: 1.18rem;
+	font-family: PingFangSC-Medium;
+	color: #F0A008;
+	background: url(../../activity/img/Nov11/Nov11-text1.png) no-repeat center top;
+	background-size:1.6rem ;
+}
+.Nov11-list .price-wrap{
+	font-family: PingFangSC-Semibold;
+	display: inline-block;
+	vertical-align: bottom;
+	color: #FF2E6A;
+	font-size: 0.8rem;
+}
+.Nov11-list .price:before{
+	content: "¥ ";
+	font-size: 0.5rem;
+}
+.Nov11-list .price:after{
+	content: "元";
+}
+.Nov11-list .old-price{
+	position: relative;
+	color: #bebebe;
+	font-size: 0.5rem;
+	margin-bottom: 0.4rem;
+	text-decoration: line-through;
+}
+.Nov11-list .old-price:before{
+	font-size: 0.3rem;
+}
+.Nov11-list a{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+/*Nov11 end*/
+
+/*thanksgiving start*/
+.thanksgiving-part{
+	position: relative;
+	width: 18.75rem;
+	height: 37.25rem;
+	background-image:url(../../activity/img/Thanksgiving/Thanksgiving-bg.jpg) ;
+}
+.thanksgiving-part .btn{
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	top: 14.4rem;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	background: #FB2F2A;
+	line-height: 1.4rem;
+	width: 5.7rem;
+}
+.thanksgiving-part .btn.active{
+	background: transparent;
+	font-size: 0.6rem;
+}
+.thanksgiving-part .btn2{
+	top: 16.15rem
+}
+/*thanksgiving end*/
+/*palyWithTW start*/
+.playWithTW-part .btn{
+	width: 8.6rem;
+}
+/*palyWithTW end*/
+
+/*Christmas start*/
+.bg-christmasRed{
+	background-color:#e63137 ;
+}
+.Christmas-pa{
+	font-family: PingFangSC-Semibold;
+}
+.Christmas-page .luckDraw-part{
+	background-image: url(../../activity/img/Christmas/luck-bg.png);
+	width: 17.35rem;
+	height: 14.25rem;
+	margin: 0 auto;
+	margin-top: 0.1rem;
+	text-align: center;
+}
+.Christmas-page .luckDraw-part .title{
+	letter-spacing: 0.08rem;
+	color: #F5A623;
+	padding-top: 0.29rem;
+	margin-bottom: 0.57rem;
+}
+.Christmas-page .luckDraw-list{
+	width: 14.26rem;
+	margin: 0 auto;
+}
+.Christmas-page .luckDraw-list li{
+	position: relative;
+	overflow: hidden;
+	float: left;
+	margin: 0 0.075rem 0.15rem 0.075rem;
+	width: 4.6rem;
+	height: 3.35rem;
+	border-radius: 0.6rem;
+	background-image:url(../../activity/img/Christmas/Christmas-luck-btn2.png) ;
+}
+.Christmas-page .luckDraw-list li:nth-child(5){
+	background-image:url(../../activity/img/Christmas/Christmas-luck-btn1.png) ;
+}
+.Christmas-page .luckDraw-list li.active:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background: rgba(254,189,82,0.5);
+}
+.Christmas-page .luckDraw-list li .prizes{
+	position: relative;
+	color: #D7BB86;
+}
+.Christmas-page .luckDraw-list li.active .prizes{
+	color: orangered;
+}
+.Christmas-page .luckDraw-list li .prizes .p1{
+	padding-top: 0.65rem;
+	letter-spacing: 0.076rem;
+	line-height: 1.32;
+	font-size: 1.1rem;
+}
+.Christmas-page .luckDraw-list li .prizes .p2{
+	padding-top: 0.05rem;
+	letter-spacing: 0;
+	line-height: 1;
+}
+.Christmas-page .luckDraw-list li .prizes .p3{
+	letter-spacing: 0.076rem;
+	line-height: 3.35rem;
+}
+.Christmas-page .luckDraw-list li .prizes .p4{
+	padding-top: 0.8rem;
+	letter-spacing: 0.07rem;
+}
+.Christmas-page .luckDraw-list li .start-btn{
+	color: #FBF9F3;
+	letter-spacing: 0.076rem;
+	line-height: 3.35rem;
+}
+.Christmas-page .luckDraw-result-part{
+	margin-top: 0.65rem;
+}
+.Christmas-page .luckDraw-result-part .title{
+	letter-spacing: 0.08rem;
+	color: #F5A623;
+	margin-top: 0.75rem;
+	margin-bottom: 0.65rem;
+}
+.Christmas-page .luckDraw-result-list{
+	padding-bottom: 0.5rem;
+}
+.Christmas-page .luckDraw-result-list li{
+	margin: 0 0.45rem;
+}
+.Christmas-page .luckDraw-result-show{
+	color: #B5B5B5;
+	letter-spacing: 0.03rem;
+	line-height: 1rem;
+	height: 1rem;
+	width: 100%;
+	overflow: hidden;
+}
+.Christmas-page .luckDraw-result-show-list li{
+	position: absolute;
+	transform: translateY(1rem);-webkit-transform: translateY(1rem);
+	top: 0;
+	left: 0;
+	right: 0;
+	
+}
+.Christmas-page .luckDraw-result-show-list li.active{
+	animation: resultShow 5s;
+    -webkit-animation: resultShow 5s;
+}
+@keyframes resultShow
+{
+    0% {transform: translateY(1rem);-webkit-transform: translateY(1rem);}
+    20% {transform: translateY(0);-webkit-transform: translateY(0);}
+    80% {transform: translateY(0);-webkit-transform: translateY(0);}
+    100% {transform: translateY(-1rem);-webkit-transform: translateY(-1rem);}
+}
+ 
+@-webkit-keyframes resultShow 
+{
+    0% {transform: translateY(1rem);-webkit-transform: translateY(1rem);}
+    20% {transform: translateY(0);-webkit-transform: translateY(0);}
+    80% {transform: translateY(0);-webkit-transform: translateY(0);}
+    100% {transform: translateY(-1rem);-webkit-transform: translateY(-1rem);}
+}
+.Christmas-page  .luckDrawResultPopup{
+	width: 16.4rem;
+	height: 17.7rem;
+	background-image: url(../../activity/img/Christmas/Christmas-luck-result-pop.png);
+}
+.Christmas-page  .luckDrawResultPopup .tip{
+	font-family: PingFangSC-Medium;
+	color: #9B9B9B;
+	letter-spacing: 0.03rem;
+	margin-top: 1.5rem;
+}
+.Christmas-page .coupon{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 4.3rem ;
+	width: 4.25rem;
+	height: 6.05rem;
+	background-image: url(../../activity/img/Christmas/Christmas-luck-result-coupon-bot.png);
+	background-repeat:no-repeat ;
+	background-position:center bottom;
+	background-size:100% auto;	
+	border: 0.2rem solid #d1061f;
+	border-radius: 0.2rem;
+}
+.Christmas-page .coupon:before{
+	content: "";
+	width: 4.65rem;
+	height: 6.45rem;
+	position: absolute;
+	left: -0.3rem;
+	top: -0.3rem;
+	border: 0.1rem solid #fff;
+	border-radius: 0.3rem;
+	box-shadow: 0 0.2rem 0.3rem 0 rgba(0,0,0,0.25);
+}
+.Christmas-page .coupon .p1{
+	padding-top: 0.75rem;
+	letter-spacing: 0.076rem;
+	line-height: 1.32;
+	font-size: 1.1rem;
+	color: #D7BB86;
+}
+.Christmas-page .coupon .p2{
+	padding-top: 0.2rem;
+	letter-spacing: 0;
+	line-height: 1;
+	color: #D7BB86;
+}
+.Christmas-page  .coupon .btn{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	line-height: 2rem;
+	border-top: 1px dashed #D7BB86;
+	color: #D1061F;
+}
+.Christmas-page  .coupon .btn.yellow{
+	color: #D7BB86;
+}
+.Christmas-page  .coupon .btn.gray{
+	color: #CDCDCD;
+}
+.Christmas-page .free-part{
+	padding-top: 12.2rem;
+}
+.Christmas-page .free-list{
+	background-color:#c1d5dd ;
+	background-image:url(../../activity/img/Christmas/Christmas-noRent-bg-all.jpg) ;
+	background-size:100% 100% ;
+}
+.Christmas-page .free-list:after{
+	content: "库存有限，先到先得";
+	display: block;
+	color: #808080;
+	font-size: 0.6rem;
+	text-align: center;
+	padding-top: 1rem;
+}
+.Christmas-page .free-list li{
+	position: relative;
+	border: 0.1rem solid #88D2DE;
+	box-shadow: 0 0.1rem 0.2rem 0 rgba(0,0,0,0.30);
+	border-radius: 0.1rem;
+	height: 4.85rem;
+	margin: 0 1rem 0.5rem 1rem;
+	padding:0.95rem 0.75rem 0.95rem 7rem;
+}
+.Christmas-page .free-list li:last-child{
+	margin-bottom: 0;
+}
+.Christmas-page .free-list li:nth-child(2n+1){
+	background-color: #fff;
+}
+.Christmas-page .free-list li:nth-child(2n){
+	background-color: #FBF9F3;
+}
+.Christmas-page .free-list li .image{
+	position: absolute;
+	width: 5.25rem;
+	height: 4.85rem;
+	left: 1rem;
+	top: 50%;
+	margin-top: -2.475rem;
+	border: 1px solid #979797;
+	background-color:#D8D8D8 ;
+}
+.Christmas-page .free-list li .image.active:before,
+.Christmas-page .give-list li .image-wrap .image.active:before{
+	content: "已售罄";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	color: #fff;
+	font-size: 0.7rem;
+	letter-spacing: 0.06rem;
+	text-align: center;
+	line-height: 4.85rem;
+	background: rgba(0,0,0,0.5);
+}
+.Christmas-page .give-list li .image-wrap .image.active:before{
+	line-height: 5.95rem;
+}
+.Christmas-page .free-list li .image.less:after,
+.Christmas-page .give-list li .image-wrap .image.less:after{
+	content: "库存紧张";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	font-size: 0.6rem;
+	color: #D0021B;
+	line-height: 1.6rem;
+	font-weight: bold;
+	height: 1.6rem;
+	background: rgba(255,0,0,0.10);
+}
+.Christmas-page .free-list li .title{
+	font-family: PingFangSC-Medium;
+	color: #393838;
+	letter-spacing: 0.06rem;
+	margin-bottom: 0.3rem;
+	line-height: 1rem;
+	height: 2rem;
+}
+.Christmas-page .free-list li .price{
+	margin-top: 0.3rem;
+}
+.Christmas-page .free-list li .btn{
+	display: block;
+	position: absolute;
+	right: -0.6rem;
+	bottom: 0.5rem;
+	width: 4.85rem;
+	padding-left: 0.2rem;
+	height: 1.65rem;
+	line-height: 1.4rem;
+	color: #fff;
+	text-align: center;
+	font-family: PingFangSC-Regular;
+	letter-spacing: 0.05rem;
+}
+.Christmas-page .free-list li .btn1{
+	background-image:url(../../activity/img/Christmas/Christmas-btn3.png) ;
+}
+.Christmas-page .free-list li .btn2{
+	background-image:url(../../activity/img/Christmas/Christmas-btn2.png) ;
+}
+.Christmas-page .free-list li .btn3{
+	background-image:url(../../activity/img/Christmas/Christmas-btn1.png) ;
+	color: #F5A623;
+}
+.Christmas-page .give-part{
+	background: #202126;
+}
+.Christmas-page .give-part .title-image{
+	top:9.4rem;
+	left: 50%;
+	width: 13rem;
+	margin-left: -6.5rem;
+}
+.Christmas-page .give-list li{
+	position: relative;
+	height: 14.5rem;
+	background-position:top center ;
+	background-repeat:no-repeat ;
+	background-size:100% auto;
+	text-align: center;
+}
+.Christmas-page .give-list li:nth-child(2n+1){
+	padding-right: 1.3rem;
+	padding-left: 10.95rem;
+	background-image: url(../../activity/img/Christmas/Christmas-give-01.jpg);
+}
+.Christmas-page .give-list li:nth-child(2n){
+	padding-left: 1.3rem;
+	padding-right: 10.95rem;
+	background-image: url(../../activity/img/Christmas/Christmas-give-02.jpg);
+}
+.Christmas-page .give-list li .image-wrap{
+	position: absolute;
+	left: 1.8rem;
+	top: 5.7rem;
+}
+.Christmas-page .give-list li:nth-child(2n) .image-wrap{
+	left: auto;
+	right: 1.8rem;
+}
+.Christmas-page .give-list li .image-wrap .bg1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 7.75rem;
+	height: 6.15rem;
+	transform: rotate(6deg);
+	-webkit-transform: rotate(6deg);
+	background-image: -webkit-linear-gradient(-135deg, #F2D15C 0%, #A67B3D 100%);
+	background-image: linear-gradient(-135deg, #F2D15C 0%, #A67B3D 100%);
+	border-radius: 0.2rem;
+}
+.Christmas-page .give-list li .image-wrap .bg2{
+	display: block;
+	width: 7.55rem;
+	height: 5.95rem;
+	padding: 0.1rem;
+	border-radius: 0.2rem;
+	background-image: -webkit-linear-gradient(135deg, #B96B08, #FAD50F 50%,#B96B08);
+	background-image: linear-gradient(135deg, #B96B08, #FAD50F 50%,#B96B08);
+}
+.Christmas-page .give-list li .image-wrap .bg2 .image{
+	height: 100%;
+	width: 100%;
+	border-radius: 0.2rem;
+}
+.Christmas-page .give-list li .comment{
+	font-family: PingFangSC-Medium;
+	color: #F5A623;
+	letter-spacing:0.05rem;
+	padding-top: 3.8rem;
+	padding-bottom: 1rem;
+}
+.Christmas-page .give-list li .title{
+	font-family: PingFangSC-Regular;
+	letter-spacing: 0.1rem;
+	text-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.50);
+}
+.Christmas-page .give-list li .and{
+	color: #F5A623;
+	font-size: 1rem;
+}
+.Christmas-page .give-list li .foot{
+	position: absolute;
+	bottom: 0.2rem;
+	left: 0.5rem;
+	right: 0.5rem;
+	opacity: 0.3rem;
+}
+.Christmas-page .give-list li .foot .yellow{
+	color:#F5A623;
+}
+.Christmas-page .give-list li .foot .btn{
+	position: relative;
+	text-align: center;
+	color: #202126;
+	margin-left: 2.6rem;
+	padding: 0.05rem;
+	border-radius:1.23rem;
+	background-image: -webkit-linear-gradient(90deg, #F5A623,#FBD249);
+	background-image: linear-gradient(90deg, #F5A623,#FBD249);
+}
+.Christmas-page .give-list li .foot .btn:before{
+	content: "立即租赁";
+	display: block;
+	width: 4.5rem;
+	height: 1.23rem;
+	line-height: 1.23rem;
+	border-radius:1.23rem;
+	letter-spacing: 0.1rem;
+	background-image: -webkit-linear-gradient(90deg, #FBD249, #F8B933 50%,#F5A623);
+	background-image: linear-gradient(90deg, #FBD249, #F8B933 50%,#F5A623);
+	z-index: 0;
+}
+.Christmas-page .give-list li .foot .btn1,
+.Christmas-page .give-list li .foot .btn2{
+	position: relative;
+	text-align: center;
+	color: #fff;
+	background: #cdcdcd;
+	width: 4.5rem;
+	height: 1.23rem;
+	line-height: 1.23rem;
+	border-radius:1.23rem;
+	letter-spacing: 0.1rem;
+}
+.Christmas-page .give-list li .foot .btn2{
+	color: #f5a623;
+	background: transparent;
+	border: 1px solid #f5a623;
+}
+.Christmas-page .give-list li .foot .btn1:before,
+.Christmas-page .give-list li .foot .btn2:before{
+	display: none;
+}
+.Christmas-page .give-list li:nth-child(2n)  .foot .btn{
+	margin-right: 2.6rem;
+	margin-left: 0;
+}
+.Christmas-page .rule-part{
+	background: #212227;
+	padding: 3.3rem 1.1rem 0.8rem 1.1rem;
+}
+.Christmas-page .rule-wrap{
+	position: relative;
+	border-radius: 0.4rem;
+   	background-size: 1.9rem 1.9rem;
+    background-image:-webkit-linear-gradient(45deg,#fff,#fff 12.5%,#f70b0b 12.5%,#f70b0b 25%,#fff 25%,#fff 37.5%,#3b6110 37.5%,#3b6110 50%,#fff 50%,#fff 62.5%,#f70b0b 62.5%,#f70b0b 75%,#fff 75%,#fff 87.5%,#3b6110 87.5%,#3b6110);
+    background-image:-moz-linear-gradient(45deg,#fff,#fff 12.5%,#f70b0b 12.5%,#f70b0b 25%,#fff 25%,#fff 37.5%,#3b6110 37.5%,#3b6110 50%,#fff 50%,#fff 62.5%,#f70b0b 62.5%,#f70b0b 75%,#fff 75%,#fff 87.5%,#3b6110 87.5%,#3b6110);
+    background-image:-o-linear-gradient(45deg,#fff,#fff 12.5%,#f70b0b 12.5%,#f70b0b 25%,#fff 25%,#fff 37.5%,#3b6110 37.5%,#3b6110 50%,#fff 50%,#fff 62.5%,#f70b0b 62.5%,#f70b0b 75%,#fff 75%,#fff 87.5%,#3b6110 87.5%,#3b6110);
+    background-image:linear-gradient(45deg,#fff,#fff 12.5%,#f70b0b 12.5%,#f70b0b 25%,#fff 25%,#fff 37.5%,#3b6110 37.5%,#3b6110 50%,#fff 50%,#fff 62.5%,#f70b0b 62.5%,#f70b0b 75%,#fff 75%,#fff 87.5%,#3b6110 87.5%,#3b6110);
+	padding: 0.315rem;
+}
+.Christmas-page .rule-wrap .content{
+	font-family: PingFangSC-Regular;
+	position: relative;
+	border-radius: 0.15rem;
+	background-color:#202126 ;
+	padding-top: 1.235rem;
+	padding: 1.235rem 1.2rem 1.3rem 1.2rem;
+	text-align: justify;
+}
+.Christmas-page .rule-wrap .content .image{
+	position: absolute;
+	width: 2.5rem;
+	top: -1rem;
+	left:50%;
+	margin-left: -1.25rem;
+}
+.Christmas-page .rule-wrap .content .title{
+	letter-spacing: 0.06rem;
+	margin-bottom: 0.6rem;
+}
+.Christmas-page .rule-wrap .content .words > p{
+	margin-bottom: 0.4rem;
+}
+.Christmas-page .popup-layer{
+	background: rgba(0, 0, 0, 0.80);
+}
+/*Christmas end*/
+
+/*alipaypage1 start*/
+.alipayPage1-page .banner{
+	height: 11.25rem;
+}
+.alipayPage1-page .product-list{
+	margin-top: 0.5rem;
+	background: #FFFFFF;
+}
+.alipayPage1-page .product-list > li{
+	position: relative;
+	padding-top: 1.55rem;
+	width: 50%;
+	height: 9.45rem;
+}
+.alipayPage1-page .product-list > li:before{
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	left: 0;
+	bottom: 1px;
+	background: #F2F2F2;
+}
+.alipayPage1-page .product-list > li:nth-child(2n+1):after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	right: 0;
+	top: 0;
+	background: #F2F2F2;
+}
+.alipayPage1-page .product-list > li .image{
+	display: inline-block;
+	width: 6rem;
+	height: 5rem;
+	margin-bottom: 0.1rem;
+}
+.alipayPage1-page .product-list > li .title{
+	padding: 0 1.05rem 0.2rem 1.05rem;
+	line-height: 1.3;
+}
+/*alipaypage1 end*/
+/*newYear start*/
+.newYear-page{
+	background-image:url(../../activity/img/newYear/2018newyear-04.png);
+	background-repeat:repeat-y ;
+	background-size:100% auto ;
+}
+.newYear-page .title-image{
+	display: block;
+	margin: 0 auto;
+	width: 7.85rem;
+}
+.newYear-page .title-image2{
+	width: 11.65rem;
+}
+.newYear-list1 li{
+	position: relative;
+	width: 15.75rem;
+	background: #FFFFFF;
+	margin: 2rem auto;
+	padding: 0.9rem 0;
+	text-align: center;
+}
+.newYear-list1 li .border,
+.newYear-list1 li .square{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	position: absolute;
+	background: #fff;
+	border: 0.15rem solid #CDB184;
+}
+.newYear-list1 li .border-top,
+.newYear-list1 li .border-bottom{
+	width: 100%;
+	height: 0.6rem;
+	left: 0;
+}
+.newYear-list1 li .border-top{
+	top: -0.6rem;
+	border-bottom: none;
+}
+.newYear-list1 li .border-bottom{
+	bottom: -0.6rem;
+	border-top: none;
+}
+.newYear-list1 li .border-left,
+.newYear-list1 li .border-right{
+	width: 0.6rem;
+	height: 100%;
+	top: 0;
+}
+.newYear-list1 li .border-left{
+	left: -0.6rem;
+	border-right: none;
+}
+.newYear-list1 li .border-right{
+	right: -0.6rem;
+	border-left: none;
+}
+.newYear-list1 li .square{
+	width: 0.6rem;
+	height: 0.6rem;
+}
+.newYear-list1 li .square1{
+	left: 0;
+	top: 0;
+}
+.newYear-list1 li .square2{
+	right: 0;
+	top: 0;
+}
+.newYear-list1 li .square3{
+	bottom: 0;
+	left: 0;
+}
+.newYear-list1 li .square4{
+	right: 0;
+	bottom: 0;
+}
+.newYear-list1 li .image{
+	position: relative;
+	display: block;
+	margin: 0 auto 1rem auto;
+	width: 8.55rem;
+	height: 4.95rem;
+}
+.newYear-list1 li .title{
+	margin: 0 1rem 0.25rem 1rem;
+	color: #936210;
+}
+.newYear-list1 li .icon{
+	width: 1.9rem;
+	margin-right: 0.3rem;
+}
+.newYear-list1 li .btn-wrap{
+	margin-top: 0.6rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+}
+.newYear-list1 li .price{
+	border: 1px solid #FFDCA2;
+	color: #f58522;
+	padding: 0 0.5rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: 1.5rem;
+	line-height: 1.41rem;
+}
+.newYear-list1 li .price .font-bold{
+	color: #d22d33;
+}
+.newYear-list1 li .btn{
+	background-image: -webkit-linear-gradient(-180deg, #FFE5AE 0%, #FCD087 100%);
+	background-image: linear-gradient(-180deg, #FFE5AE 0%, #FCD087 100%);
+	color: #936210;
+	width: 3.85rem;
+}
+.newYear-list1 li.sellOut .price{
+	border-color: #9B9B9B;
+	color: #9B9B9B;
+}
+.newYear-list1 li.sellOut .price .font-bold{
+	color: #9B9B9B;
+}
+.newYear-list1 li.sellOut .btn{
+	background: #9B9B9B;
+	color: #FFFFFF;
+}
+.newYear-list1 li.sellOut .image:after{
+	content: "已售罄";
+	position: absolute;
+	font-size: 0.8rem;
+	color: #fff;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	text-align: center;
+	background: rgba(0,0,0,0.52);
+	left: 0;
+	right: 0;
+	line-height: 2rem;
+	top: 50%;
+	margin-top: -1rem;
+}
+.newYear-list2{
+	padding-top: 0.75rem;
+	padding-bottom: 1rem;
+}
+.newYear-list2 li{
+	position: relative;
+	width: 17.35rem;
+	height: 10.95rem;
+	margin:  0 auto 1rem auto;
+}
+.newYear-list2 .bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.newYear-list2 .image{
+	position: absolute;
+	width:5.6rem;
+	height:5.6rem;
+	left: 0.97rem;
+	top: 1.4rem;
+	border-radius: 100%;
+}
+.newYear-list2 .content{
+	margin-left: 7.4rem;
+	margin-right: 0.7rem;
+	padding-top: 1rem;
+}
+.newYear-list2 .content .tag{
+	height: 1.7rem;
+	width: 100%;
+	line-height: 1.7rem;
+	margin-bottom: 0.5rem;
+}
+.newYear-list2 .content .price{
+	text-align: left;
+	color: #F58522;
+	margin-top:0.8rem;
+	margin-bottom: 0.2rem;
+	line-height: 1;
+}
+.newYear-list2 .content .price .red{
+	color: #D3001A;
+}
+.newYear-list2 .content .price .font-18{
+	position: relative;
+	bottom: -0.1rem;
+}
+.newYear-page .rule-wrap{
+	color: #4E4E4E;
+	margin: 1.25rem 1.7rem 0 1.7rem;
+	padding-bottom: 3.9rem;
+	text-align: justify;
+	letter-spacing: 0.01rem;
+}
+.newYear-page .coupon-wrap{
+	position: relative;
+	margin-bottom: 1.75rem;
+}
+.newYear-page .coupon-before{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 15.75rem;
+	height: 11.6rem;
+	background-image: url(../../activity/img/newYear/2018newyear-09.png);
+}
+.newYear-page .coupon-before .loading{
+	position: absolute;
+	padding: 0.8rem 1rem;
+	background: rgba(0,0,0,0.5);
+	font-size: 0.8rem;
+	color: #fff;
+	border-radius: 0.3rem;
+}
+.newYear-page .coupon-after{
+	position: relative;
+	height: 14.45rem;
+	width: 15.35rem;
+	margin: 0 auto;
+	background-image: url(../../activity/img/newYear/2018newyear-10.png);
+	background-repeat:no-repeat ;
+	background-position:top center ;
+	background-size:100% auto ;
+}
+.newYear-page .coupon-after:after{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 7.35rem;
+	bottom: 0;
+	left: -0.35rem;
+	right: -0.35rem;
+	background-image: url(../../activity/img/newYear/2018newyear-11.png);
+	background-repeat:no-repeat ;
+	background-position:center ;
+	background-size:contain;
+}
+.newYear-page .coupon-wrap .coupon-bg{
+	position: absolute;
+	height:10.3rem ;
+	background-image: url(../../activity/img/newYear/2018newyear-12.png);
+	bottom: 0.3rem;
+	left: -0.35rem;
+	right: -0.35rem;
+}
+.newYear-page .coupon-wrap .coupon-down{
+	transform: translateY(-3.5rem);
+	-webkit-transform: translateY(-3.5rem);
+}
+.newYear-page .coupon-wrap .coupon-move{
+	animation:couponMove 0.6s ease-in forwards ;
+	-webkit-animation:couponMove 0.6s ease-in forwards ;
+}
+@keyframes couponMove
+{
+from {
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+}
+to {
+	transform: translateY(-3.5rem);
+	-webkit-transform: translateY(-3.5rem);
+}
+}
+
+@-webkit-keyframes couponMove 
+{
+from {
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+}
+to {
+	transform: translateY(-3.5rem);
+	-webkit-transform: translateY(-3.5rem);
+}
+}
+.newYear-page .coupon-wrap .coupon-list{
+	padding-top: 0.4rem;
+}
+.newYear-page .coupon-wrap .coupon-list li{
+	position: relative;
+	margin: 0 auto 0.45rem auto;
+	height: 2.8rem;
+	width: 14.35rem;
+	color: #F7CC86;
+}
+.newYear-page .coupon-wrap .coupon-list li .value{
+	position: absolute;
+	line-height: 2.8rem;
+	font-size: 1.8rem;
+	width: 4.5rem;
+	text-align: center;
+	left: 0.3rem;
+	top: 0;
+}
+.newYear-page .coupon-wrap .coupon-list li .value:after{
+	content: "元";
+	position: absolute;
+	font-size: 0.5rem;
+	color: #F7CC86;
+	line-height: 1;
+	bottom: 0.75rem;
+	right:0.1rem;
+}
+.newYear-page .coupon-wrap .coupon-list li .condition{
+	margin-left: 6.55rem;
+	padding-top: 0.5rem;
+}
+.newYear-page .coupon-wrap .coupon-list li .time{
+	margin-left: 6.55rem;
+}
+/*newYear end*/

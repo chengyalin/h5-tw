@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ICON-我的订单-保险</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-6.66844881%" y1="-35.0233222%" x2="107.497102%" y2="123.854594%" id="linearGradient-1">
+            <stop stop-color="#52E1BE" offset="0%"></stop>
+            <stop stop-color="#0FC2D1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="4-3订单" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4-3短租订单列表/单订单" transform="translate(-323.000000, -148.000000)">
+            <g id="Group-2" transform="translate(18.000000, 80.000000)">
+                <g id="Group" transform="translate(305.000000, 68.000000)">
+                    <g id="ICON-我的订单-保险" transform="translate(4.000000, 3.000000)">
+                        <g>
+                            <path d="M16.9295475,2.45657878 L9.60138649,0.0974634521 C9.202575,-0.0324878174 8.76388237,-0.0324878174 8.3650709,0.0974634521 L1.03690987,2.45657878 C0.418752078,2.6565038 1.94805194e-08,3.22629015 0,3.87604648 L0,9.04410845 C0,12.0229914 1.44569162,14.8619268 3.8684714,16.6312633 L8.09587315,19.7101087 C8.3551006,19.9000375 8.66417951,20 8.98322869,20 C9.31224816,20 9.61135679,19.9000375 9.87058424,19.7101087 L14.097986,16.6312633 C16.5207657,14.8619268 17.9664574,12.0229914 17.9664574,9.04410845 L17.9664574,3.87604648 C17.9664574,3.22629013 17.5477053,2.6565038 16.9295475,2.45657878 Z" id="Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                            <text id="保" font-family="PingFangSC-Medium, PingFang SC" font-size="11" font-weight="400" fill="#FFFFFF">
+                                <tspan x="3.5" y="13">保</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

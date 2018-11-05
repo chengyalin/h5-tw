@@ -1,0 +1,130 @@
+.productProject-list{
+	padding: 1rem 0 2rem 0;
+}
+.productProject-item{
+	display: inline-block;
+	margin:0 0 1rem 1rem;
+	width: 7.9rem;
+	vertical-align: middle;
+}
+.productProject-item .image{
+	display: block;
+	position: relative;
+	height: 7.9rem;
+	border-radius: 0.2rem;
+	margin-bottom: 0.15rem;
+}
+.productProject-item .image .tag{
+	position: absolute;
+	opacity: 0.8;
+	color:#4e4e4e ;
+	font-size: 0.5rem;
+	border-radius:0.15rem ;
+	left: 0.4rem;
+	bottom: 0.4rem;
+	padding: 0.05rem 0.25rem;
+}
+.productProject-item .image .viewCount{
+	position: absolute;
+	right: 0.4rem;
+	bottom: 0.4rem;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.50);
+}
+.productProject-item .image .viewCount img{
+	vertical-align: middle;
+	width: 0.55rem;
+}
+.productProject-header{
+	position: relative;
+	width: 100%;
+	height: 12.5rem;
+}
+.productProject-header .content{
+	position: absolute;
+	bottom: 1rem;
+	left: 0.75rem;
+	right: 0.75rem;
+}
+.productProject-header .title{
+	font-size: 1.2rem;
+	margin-bottom: 0.25rem;
+	margin-left: 0;
+}
+.productProject-header .tag{
+	opacity: 0.8;
+	color:#4e4e4e ;
+	font-size: 0.5rem;
+	border-radius:0.15rem ;
+	padding: 0.05rem 0.25rem;
+	margin-right: 0.6rem;
+}
+.productProject-header .viewCount{
+	text-shadow: 0 0.05rem 0 rgba(0,0,0,0.50);
+}
+.productProject-header .viewCount img{
+	vertical-align: middle;
+	width: 0.55rem;
+}
+.productProject-content{
+	padding: 1.25rem 1rem 1.25rem 1rem;
+}
+.productProject-content .details{
+	line-height: 2;
+	font-size: 0.8rem;
+	color: #323232;
+	font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC","Hiragino Sans GB",Simsun,sans-self;
+}
+.productProject-content .product-insert{
+	line-height: 1.4;
+}
+.productProject-content .text1{
+	margin-bottom: 1rem;
+	padding: 0.6rem;
+}
+.productProject-content .text2{
+	margin-bottom: 1rem;
+	padding: 0.6rem;
+	line-height: 1.5rem;
+}
+.productProject-content .product{
+	border: 1px solid #cdcdcd;
+	padding: 0.6rem 1.2rem 0.6rem 0.6rem;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABNElEQVRoQ83aQQ7CIBCFYbiBN9Gk3etR9GTqSewB2uCFWgxJTbpkYN6bYQ3k/7pj0hiEa1mWewjhOgzDQ3gUsj1Kbt3jn/uZlweEFPANIZwPaHOECJBSOm3bNnlCiADly3tDiAHeEE0AT4hmgBdEF8ADohtgjVABWCLUAFYIVYAFQh3ARkAATAQMwEJAAQwEHIBGUABIBA2AQlABCAQdoI0wAWgizABaCHPAuq6fGOPlP+nIOb/HcSyzp6plBijDgd74IjQBaMWbADTj6QDteCoAEU8DoOIpAGQ8HICOhwIY8TAAKx4CYMarA9jxqgCLeDWAVbwKwDK+G2Ad3wXwEN8M8BLfBPAULwZ4ixcD5nlOPQ/wqle6cJPoTXz82UM6PRB2VW8XAcqtBZFzvklGH9U1DRt/IQ20QFhwMyAAAAAASUVORK5CYII=) no-repeat right center;
+	background-size:1rem ;
+	background-position:right 0.2rem center; 
+}
+.productProject-content .product .image{
+	width: 5.25rem;
+	height: 3.35rem;
+}
+.productProject-content .product .main{
+	position: relative;
+	margin-left: 5.75rem;
+	min-height: 2.5rem;
+	padding-bottom: 0.85rem;
+}
+.productProject-content .product .main .rent{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #C34655;
+	letter-spacing: 0;
+}
+blockquote {
+    display: block;
+    border-left: 8px solid #d0e5f2;
+    padding: 5px 10px;
+    margin: 10px 0;
+    line-height: 1.4;
+    font-size: 100%;
+    background-color: #f1f1f1;
+}
+.box-buffer1{
+	height: 5.4rem;
+	margin: 0.2rem auto 1.2rem auto;
+}
+.box-buffer2{
+	height: 0.7rem;
+	margin-bottom: 0.9rem;
+}

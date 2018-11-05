@@ -1,0 +1,197 @@
+/*instalmentBillsOrder start*/
+.instalmentBills-list .title{
+	padding: 0.25rem 0.7rem;
+}
+.instalmentBills-list .instalmentBills-cItem{
+	padding: 0.75rem;
+	padding-right: 1.8rem;
+}
+.instalmentBills-list .instalmentBills-cItem .part1{
+	width: 2.95rem;
+}
+/*instalmentBillsOrder end*/
+/*instalmentBillsOrderDetails start*/
+.overdue-red:after{
+	content: "逾期";
+	position: absolute;
+	color: #FFFFFF;
+	background: #D0021B;
+	font-size: 0.5rem;
+	height:0.85rem;
+	line-height:0.85rem;
+	width: 1.8rem;
+	text-align: center;
+	right: -2.2rem;
+	top: 50%;
+	margin-top: -0.425rem;
+}
+.space-between-center{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+	-webkit-justify-content:space-between;
+	align-items: center;
+	-webkit-align-items: center;
+}
+.instalmentBillsDetails-page .head{
+	padding: 0.75rem 0.8rem;
+	box-shadow: 0 0.05rem 0.15rem 0 #E8E8E8;
+}
+.instalmentBillsDetails-page .content{
+	padding: 1.2rem 0.75rem;
+}
+.instalmentBillsDetails-page .content .p1{
+	margin-bottom: 1rem;
+}
+.instalmentBillsDetails-page .content .p2{
+	margin-bottom: 0.5rem;
+}
+.instalmentBillsDetails-page .content .line{
+	margin: 0.8rem 0;
+}
+/*instalmentBillsOrderDetails end*/
+/*orderPayAll start*/
+.orderPayAll-page .head{
+	padding-top: 1.1rem;
+	padding-bottom: 0.75rem;
+}
+.orderPayAll-page .head .amount{
+	font-size: 1.7rem;
+	margin-top: 0.2rem;
+	line-height: 1.41;
+}
+.orderPayAll-page .orderPayAll-list{
+	margin-top: 0.65rem;
+}
+.orderPayAll-page .orderPayAll-list li{
+	margin-left: 0.75rem;
+	padding: 0.85rem 0.75rem 0.85rem 0;
+}
+.orderPayAll-page .orderPayAll-list li:first-child .line-normal{
+	display: none;
+}
+.orderPayAll-page .lateCharge-part{
+	position: relative;
+	margin-top: 0.65rem;
+	padding: 0.75rem 0;
+}
+.orderPayAll-page .lateCharge-part:after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	top: 0.75rem;
+	left: 50%;
+	bottom: 0.75rem;
+	background: #CDCDCD;
+}
+.orderPayAll-page .lateCharge-item{
+	width: 49%;
+}
+.orderPayAll-page .lateCharge-part .amount{
+	margin-top: 0.3rem;
+}
+
+/*orderPayAll end*/
+/*orderBill start*/
+.orderBill-page .head{
+	padding: 1.3rem 0 2rem 0;
+}
+.orderBill-page .head .amount{
+	font-size: 1.7rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.9rem;
+	line-height: 1.41;
+	height: 2.4rem;
+}
+.orderBill-page .head .amount.good{
+	background: url(../img/good-green.png) no-repeat center;
+	background-size:1.3rem auto ;
+}
+.orderBill-page .btn-wrap{
+	margin-top: 1.4rem;
+}
+.orderBill-page .btn-wrap .btn{
+	width: 5.15rem;
+	height: 1.85rem;
+	line-height: 1.85rem;
+	border-radius: 0.2rem;
+	border: 1px solid #16C39D;
+	margin: 0 0.55rem;
+}
+.orderBill-page .btn-wrap .btn1{
+	color: #16C39D;
+}
+.orderBill-page .btn-wrap .btn2{
+	background: #16C39D;
+}
+.orderBill-page .orderBill-part2{
+	position: relative;
+	padding: 0.5rem 0 0.45rem 0;
+	box-shadow: 0 0 0.15rem 0.05rem rgba(232,232,232,0.51);
+}
+.orderBill-page .orderBill-part2:after{
+	content: "";
+	position: absolute;
+	background: #CDCDCD;
+	top: 1rem;
+	bottom: 1rem;
+	left: 50%;
+	width: 1px;
+}
+.orderBill-page .orderBill-part2 .orderBill-part2-item{
+	width: 49%;
+}
+.orderBill-page .orderBill-item{
+	padding: 0.25rem 0.75rem;
+}
+.orderBill-page .orderBill-item1{
+	padding: 1.25rem 0.75rem 0.5rem 0.75rem;
+}
+.orderBill-page .orderBill-item2{
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.orderBill-page .orderBill-item.line2{
+	width: auto;
+	padding: 0;
+	margin: 0.25rem 0.75rem;
+}
+/*orderBill end*/
+/*longOrderStep start*/
+.longOrderStep-page .head{
+	padding: 0.75rem 1.365rem;
+}
+.longOrderStep-page .part{
+	margin-bottom: 0.65rem;
+}
+.longOrderStep-page .part .title,
+.longOrderStep-page .part .content{
+	position: relative;
+	padding: 0.75rem 1.15rem 0.75rem 2rem;
+}
+.longOrderStep-page .part .content{
+	line-height: 1.42;
+}
+.longOrderStep-page .part .title{
+	padding-left: 1.95rem;
+}
+.longOrderStep-page .part .title .num{
+	position: absolute;
+	font-weight: normal;
+	font-size: 0.5rem;
+	left: 0.75rem;
+	top: 0.9rem;
+	background: #50E3C2;
+	color: #FFFFFF;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 0.8rem;
+}
+.longOrderStep-page .part .box1{
+	width: 15rem;
+	height: 3rem;
+	border: 1px solid #979797;
+}
+/*longOrderStep end*/

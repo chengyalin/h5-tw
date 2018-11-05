@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title>芝麻信用免押金租赁规则</title>
+		<script type="text/javascript">
+			function getBrowser(type) {
+				var flag;
+				var userAgent = navigator.userAgent;
+				switch(type) {
+					case "pc":
+						var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+						flag = true;
+						for(var v = 0; v < agents.length; v++) {
+							if(userAgent.indexOf(agents[v]) > -1) {
+								flag = false;
+								break;
+							}
+						};
+						break;
+					case "alipay":
+						flag = userAgent.match(/Alipay/i) == "Alipay";
+						break;
+					case "wechat":
+						flag = userAgent.match(/MicroMessenger/i) == "MicroMessenger";
+						break;
+					case "uc":
+						flag = userAgent.match(/ucbrowser/i) == "ucbrowser";
+						break;
+					default:
+				};
+				return flag;
+			};
+			const IFPCFLAG = getBrowser("pc");
+			if(IFPCFLAG) {
+				document.documentElement.style.fontSize = 640 / 18.75 + 'px';
+			} else {
+				document.documentElement.style.fontSize = window.innerWidth / 18.75 + 'px'
+				window.onresize = function() {
+					document.documentElement.style.fontSize = window.innerWidth / 18.75 + 'px'
+				}
+			};
+		</script>
+		<style type="text/css">
+			html,
+			body {
+				font-family: '-apple-system', 'SF UI Text', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'sans-serif';
+				-webkit-font-smoothing: antialiased;
+				-webkit-tap-highlight-color: transparent;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				height: 100%;
+				width: 100%;
+				word-break: break-all;
+			}
+			
+			body {
+				font-size: 0.7rem;
+				line-height: 1.42857;
+				background: #f7f7f7;
+				color: #333333;
+				-webkit-overflow-scrolling: touch;
+				background: #FFFFFF;
+			}
+			
+			html,
+			body,
+			ul,
+			li,
+			ol,
+			dl,
+			dd,
+			dt,
+			p,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			form,
+			fieldset,
+			legend,
+			img,
+			input,
+			button,
+			select {
+				margin: 0;
+				padding: 0;
+				outline: 0;
+				border: none;
+			}
+			
+			ul,
+			ol {
+				list-style-type: none;
+			}
+			
+			div,
+			a,
+			button {
+				outline: none;
+				text-decoration: none;
+				color: inherit;
+				cursor: pointer;
+			}
+			
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"] {
+				outline-style: none;
+				-webkit-appearance: none;
+			}
+			
+			textarea {
+				resize: none
+			}
+			
+			input,
+			textarea,
+			select {
+				font-size: 0.7rem;
+			}
+			
+			input:focus,
+			textarea:focus {
+				border: inherit;
+				box-shadow: none;
+				outline: none;
+			}
+			
+			a,
+			a:link,
+			a:visited,
+			a:hover,
+			a:active {
+				outline: 0;
+				text-decoration: none;
+			}
+			
+			iframe {
+				border: none;
+			}
+			
+			[v-cloak] {
+				display: none!important;
+			}
+			
+			#app {
+				min-height: 100%;
+			}
+			
+			.text-left {
+				text-align: left;
+			}
+			
+			.text-right {
+				text-align: right;
+			}
+			
+			.text-center {
+				text-align: center;
+			}
+			
+			.float-left {
+				float: left;
+			}
+			
+			.float-right {
+				float: right;
+			}
+			
+			.clearfix:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.vertical-top {
+				display: inline-block;
+				vertical-align: top;
+			}
+			
+			.vertical-middle {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			
+			.vertical-bottom {
+				display: inline-block;
+				vertical-align: bottom;
+			}
+			
+			.text-underline {
+				text-decoration: underline;
+			}
+			
+			.text-through {
+				text-decoration: line-through;
+			}
+			
+			.font-bold {
+				font-weight: bold;
+			}
+			
+			.font-10 {
+				font-size: 0.5rem;
+			}
+			
+			.font-12 {
+				font-size: 0.6rem;
+			}
+			
+			.font-14 {
+				font-size: 0.7rem;
+			}
+			
+			.font-16 {
+				font-size: 0.8rem;
+			}
+			
+			.font-18 {
+				font-size: 0.9rem;
+			}
+			
+			.font-20 {
+				font-size: 1rem;
+			}
+			
+			.font-22 {
+				font-size: 1.1rem;
+			}
+			
+			.font-24 {
+				font-size: 1.2rem;
+			}
+			
+			.font-26 {
+				font-size: 1.3rem;
+			}
+			
+			.bg-cover {
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+			
+			.bg-contain {
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+			
+			.bg-full {
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% 100%;
+			}
+			
+			.bg-gradient-normal {
+				background: -webkit-linear-gradient(left, #2c5861, #517682);
+				background: -o-linear-gradient(left, #2c5861, #517682);
+				background: -moz-linear-gradient(left, #2c5861, #517682);
+				background: linear-gradient(to right, #2c5861, #517682);
+			}
+			
+			.bg-white {
+				background: #FFFFFF;
+			}
+			
+			.btn-white-40 {
+				background: rgba(255, 255, 255, 0.4);
+			}
+			
+			.bg-blue {
+				background-color: #36646E;
+			}
+			
+			.bg-darkGray {
+				background-color: #333333;
+			}
+			
+			.bg-buffer {
+				background-color: #F7F7F7;
+			}
+			
+			.bg-green {
+				background-color: #00DCC4;
+			}
+			
+			.bg-BBB {
+				background-color: #BBBBBB;
+			}
+			
+			.center {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+			}
+			
+			.top {
+				top: 0;
+			}
+			
+			.bottom {
+				bottom: 0;
+			}
+			
+			.left {
+				left: 0;
+			}
+			
+			.right {
+				right: 0;
+			}
+			
+			.fixed {
+				position: fixed;
+			}
+			
+			.relative {
+				position: relative;
+			}
+			
+			.absolute {
+				position: absolute;
+			}
+			
+			.overflow-hidden {
+				overflow: hidden!important;
+			}
+			
+			.block {
+				display: block;
+			}
+			
+			.inline-block {
+				display: inline-block;
+			}
+			
+			.flex {
+				display: flex;
+				display: -webkit-flex;
+			}
+			
+			.display-none {
+				display: none;
+			}
+			
+			.display-flex-between {
+				display: flex;
+				display: -webkit-flex;
+				justify-content: space-between;
+				-webkit-justify-content: space-between;
+			}
+			
+			.flex-column {
+				flex-direction: column;
+				-webkit-flex-direction: column;
+			}
+			
+			.flex-align-center {
+				align-items: center;
+				-webkit-align-items: center;
+			}
+			
+			.flex-align-start {
+				align-items: flex-start;
+				-webkit-align-items: flex-start;
+			}
+			
+			.flex-center {
+				display: flex;
+				display: -webkit-flex;
+				justify-content: center;
+				-webkit-justify-content: center;
+				align-content: center;
+				-webkit-align-content: center;
+			}
+			
+			.width-full {
+				width: 100%;
+			}
+			
+			.height-full {
+				height: 100%;
+			}
+			
+			.min-height-full {
+				min-height: 100%;
+			}
+			
+			.border-box {
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+			}
+			
+			.line-ellipsis {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			
+			.line-clamp-2,
+			.line-clamp-3,
+			.line-clamp-4,
+			.line-clamp-6 {
+				display: -webkit-box;
+				overflow: hidden;
+				white-space: normal!important;
+				text-overflow: ellipsis;
+				word-wrap: break-word;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+			
+			.line-clamp-2 {
+				-webkit-line-clamp: 2;
+			}
+			
+			.line-clamp-3 {
+				-webkit-line-clamp: 3;
+			}
+			
+			.line-clamp-4 {
+				-webkit-line-clamp: 4;
+			}
+			
+			.line-clamp-6 {
+				-webkit-line-clamp: 6;
+			}
+			
+			.button-clear {
+				background: none;
+				outline: none;
+				border: none;
+			}
+			
+			.font-white {
+				color: #ffffff;
+			}
+			
+			.font-white-40 {
+				color: rgba(255, 255, 255, 0.4);
+			}
+			
+			.font-white-60 {
+				color: rgba(255, 255, 255, 0.6);
+			}
+			
+			.font-blue {
+				color: #36646E;
+			}
+			
+			.font-darkGray {
+				color: #333333;
+			}
+			
+			.font-grey {
+				color: #666666;
+			}
+			
+			.font-lightGray {
+				color: #999999;
+			}
+			
+			.font-BBB {
+				color: #bbbbbb;
+			}
+			
+			.font-green {
+				color: #00DCC4;
+			}
+			
+			.font-red {
+				color: #E6361F;
+			}
+			
+			.font-3ED8C4 {
+				color: #3ED8C4;
+			}
+			
+			.radius-1 {
+				border-radius: 0.1rem;
+			}
+			
+			@media (min-width: 750px) {
+				#app {
+					width: 640px;
+					margin: 0 auto;
+				}
+				.fixd-center {
+					width: 640px;
+					left: 50%!important;
+					margin-left: -320px;
+				}
+			}
+			
+			.zhimaRule-header {
+				height: 7.4rem;
+				background: #3ED8C4;
+				overflow: hidden;
+			}
+			
+			.zhimaRule-header:after {
+				content: "";
+				position: absolute;
+				width: 400%;
+				height: 60rem;
+				border-radius: 100%;
+				background: white;
+				bottom: -58rem;
+				left: 50%;
+				transform: translate(-50%, 0);
+			}
+			
+			.zhimaRule-header .backBtn {
+				position: absolute;
+				width: 2rem;
+				height: 2rem;
+				text-align: center;
+				line-height: 2rem;
+				right: 0;
+				top: 0;
+			}
+			
+			.zhimaRule-header .title {
+				padding-top: 1.5rem;
+				font-size: 1.4rem;
+			}
+			
+			.zhimaRule-list {
+				padding: 0.8rem 1.4rem 0 1.4rem;
+			}
+			
+			.zhimaRule-list .zhimaRule-item {
+				padding-bottom: 2rem;
+			}
+			
+			.zhimaRule-list .title {
+				position: relative;
+				margin-bottom: 1.2rem;
+				padding-left: 0.8rem;
+			}
+			
+			.zhimaRule-list .title:before {
+				content: "";
+				position: absolute;
+				width: 0.2rem;
+				height: 0.2rem;
+				left: 0;
+				top: 50%;
+				margin-top: -0.2rem;
+				border-radius: 100%;
+				border: 1px solid #3ED8C4;
+			}
+			
+			.zhimaRule-list .words {
+				line-height: 1.1rem;
+				letter-spacing: 0.015rem;
+				margin-bottom: 1.5rem;
+			}
+			
+			.zhimaRule-list .words.font-yellow {
+				margin-bottom: 1rem;
+			}
+			
+			.zhimaRule-list .image {
+				display: block;
+				width: 12.25rem;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="app" class="zhimaRule">
+			<div class="zhimaRule-header relative font-white">
+				<p class="title text-center font-26">芝麻信用免押金租赁规则</p>
+			</div>
+			<ul class="zhimaRule-list">
+				<li class="zhimaRule-item">
+					<p class="title font-18 font-bold font-black">什么是芝麻分？</p>
+					<p class="words font-14 font-yellow">
+						芝麻分是芝麻信用管理有限公司旗下的产品（支付宝中可查看），根据当前采集的个人用户信息进行加工、整理、计算后得出的信用评分，分值范围是350-950，分值越高代表信用水平越好，较高的芝麻分可以帮助个人获得更高效、更优质的服务。
+					</p>
+				</li>
+				<li class="zhimaRule-item">
+					<p class="title font-18 font-bold font-black">怎样获取押金减免资格？</p>
+					<div class="words font-14 font-4A4A4A">
+						在探物<span class="font-green">授权芝麻信用</span>的用户且芝麻分在650分及以上，即获得减免押金资格。
+					</div>
+					<div class="words font-14 font-4A4A4A">
+						另外，通过<span class="font-green">人脸识别</span>、<span class="font-green">提交身份证</span>完整认证的用户可以增加押金减免额度。
+					</div>
+					<img class="image" src="https://resource.tanwuapp.com/FmIALzjd9jpUAfZGGqenot5kE9xC" />
+				</li>
+				<li class="zhimaRule-item">
+					<p class="title font-18 font-bold font-black">短租产品免押</p>
+					<p class="words font-14 font-yellow">芝麻分达到650分及以上的用户能够减免押金，完成人脸识别和提交身份证认证能够提高减免额度。</p>
+					<p class="words font-14 font-4A4A4A">下单时系统会自动根据芝麻分的高低按比例减免押金。</p>
+					<img class="image" src="https://resource.tanwuapp.com/Fk3gw-9ENrkzflKBhNcIcG_RTnM6" />
+					<p class="text-center" style="color: #052C3C;margin-top: 0.7rem;">押金只需1200元，立减4800元！</p>
+				</li>
+				<li class="zhimaRule-item">
+					<p class="title font-18 font-bold font-black">长租产品免押</p>
+					<p class="words font-14 font-yellow">只有通过完整三项认证的用户才有机会下单租赁长租产品。</p>
+					<div class="words font-14 font-4A4A4A">
+						认证一：授权芝麻信用且分数在650及以上；<br /> 认证二：通过人脸识别；
+						<br /> 认证三：提交身份证照片。
+					</div>
+					<img class="image" src="https://resource.tanwuapp.com/FrjAL7EWaE6E1jk2-ze3aH2NnffX" />
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,527 @@
+.nav-home{
+	position: relative;
+	width: 100%;
+	line-height: 1.6rem;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	margin: auto;
+	z-index: 100;
+}
+.hideScrollbar::-webkit-scrollbar{
+	display:none
+}
+
+.nav-home > .nav-home-item{
+	position: relative;
+	padding: 0.5rem 0.7rem;
+	line-height: 1rem;
+	color: #ffffff;
+	opacity: 0.6;
+	/*border-bottom: 0.1rem solid #fff;*/
+}
+
+.nav-home > :first-child{
+    padding-left: 0.7rem;
+}
+
+.nav-home > .nav-home-item:after{
+	content: "";
+	display: none;
+	position: absolute;
+	left: 0.7rem;
+	right: 0.7rem;
+	bottom: 0;
+	height: 0.12rem;
+	background: #fff;
+}
+.nav-home > .active{
+	opacity: 1;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+.line-normal.bottom{
+	bottom: -1px;
+}
+.nav-home > .active:after{
+	display: block;
+}
+
+.block-top-home{
+	padding-top: 4.4rem;
+}
+
+.home-swipe {
+    height: 8rem;
+}
+
+.home-new-swipe{
+	height: 11.4rem;
+}
+
+.home-new-swipe .image{
+	display: inline-block;
+	width: 9.8rem;
+	height: 7.5rem;
+	margin-top: 0.1rem;
+}
+
+.home-new-swipe .name{
+    margin: 0.5rem 0 0.2rem 0;
+    line-height: 1.38;
+}
+
+.home-new-swipe .mint-swipe-indicators {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 16.25rem;
+	background: #f2f2f2;
+	height: 0.15rem;
+	display: flex;
+	display: -webkit-flex;
+}
+
+.home-new-swipe .mint-swipe-indicator {
+	width: auto;
+	height: 100%;
+	border-radius: 0;
+	background: transparent;
+	margin:0;
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+}
+
+.home-new-swipe .mint-swipe-indicator.is-active {
+	background: #cdcdcd
+}
+
+.product-item{
+	position: relative;
+	display: block;
+    padding: 0.75rem 0.75rem 0.6rem 0.75rem;
+}
+
+.product-item .content{
+    position: relative;
+    margin-top: 0.5rem ;
+}
+.product-item .content.active{
+	margin-top: 0.25rem;
+}
+
+.product-item .star-wrap{
+	white-space: nowrap;
+}
+
+.product-item .star-wrap .star-wrap-one{
+	width: 0.61rem;
+	height: 0.61rem;
+	margin-right:0.16rem!important;
+ 	background-size:0.61rem 0.61rem;
+}
+
+.product-item .star-wrap .full-star{
+	width: 0.61rem;
+	height: 0.61rem;
+	background-size:0.61rem 0.61rem;
+}
+
+.product-item .withoutDeposit{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	background: #144F67;
+	line-height: 0.6rem;
+	padding: 0.2rem 0.3rem;
+	border-radius: 0.2rem;
+	margin-left: 0.1rem;
+	top: -0.1rem;
+}
+.product-item .withoutDepositImage{
+	display: inline-block;
+	vertical-align: middle;
+	height: 1rem;
+	margin-left: 0.1rem;
+}
+
+.product-item .sale{
+	background: #C34655;
+}
+
+.product-item .image{
+	display: block;
+	width: 100%;
+	height: 9.2rem;
+	border-radius: 0.2rem;
+}
+.product-item .image .icon{
+	position: absolute;
+	left: 0.55rem;
+	top: 0.6rem;
+	width: 2.35rem;
+}
+.index-part{
+  padding: 0.7rem 0 0.75rem 0;
+}
+
+.index-title{
+  position: relative;
+  margin: 0 0.75rem;
+}
+
+.index-title .btn{
+	background-position:right center;
+	padding-right: 1rem;
+	line-height: 1.26rem;
+	font-weight: normal;
+	font-family: PingFangSC-Light;
+}
+
+.hot-list,
+.new-list{
+  /*width: 17.5rem;*/
+  height: 8.25rem;
+  margin: 0.5rem 0 0 0;
+  white-space:nowrap;
+  overflow: hidden;
+}
+
+.hot-list{
+    padding-bottom:0.375rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-top: 0.8rem;
+    height: 9rem;
+}
+
+.hot-long-list{
+	height: 8rem;
+}
+.hot-list.buffer-box-wrap{
+	overflow: hidden;
+}
+
+.hot-list .star-wrap .star-wrap-one{
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right:0.17rem!important;
+  background-size:0.5rem 0.5rem;
+}
+.hot-list .star-wrap .full-star{
+  width: 0.5rem;
+  height: 0.5rem;
+  background-size:0.5rem 0.5rem;
+}  
+.myStyleScrollbar::-webkit-scrollbar{
+  height:0.15rem;
+}
+
+.myStyleScrollbar::-webkit-scrollbar-track,::-webkit-scrollbar-corner{
+  background: #f2f2f2;
+}
+
+.myStyleScrollbar::-webkit-scrollbar-thumb{
+  border-radius:0;
+  background-color: #cdcdcd;
+}
+/*.hot-list::-webkit-scrollbar{
+  height:0.15rem;
+}
+
+.hot-list::-webkit-scrollbar-track,::-webkit-scrollbar-corner{
+  background: #f2f2f2;
+}
+
+.hot-list::-webkit-scrollbar-thumb{
+  border-radius:0;
+  background-color: #cdcdcd;
+}
+*/
+.hot-list .hot-item:first-child{
+	margin-left: 0.75rem;
+}
+.hot-item{
+    display: inline-block;
+    width:7rem;
+    margin-right: 0.6rem;
+    white-space: normal;
+    vertical-align: top;    
+}
+.hot-long-list .hot-item{
+	width: 6rem;
+}
+
+.hot-image{
+	display: block;
+    width: 7rem;
+    height: 5rem;
+    border-radius: 0.2rem;
+}
+.hot-long-list .hot-image{
+	width: 6rem;
+}
+
+.hot-price{
+	font-size: 0.65rem;
+}
+
+.hot-name{
+    display: block;
+    overflow: hidden;
+    line-height: 1.4;
+    margin: 0.15rem 0 0.1rem 0;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.index-tip{
+    margin: 1.35rem 0;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+}
+.index-tip::before,
+.index-tip::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.7rem;
+    height: 1px;
+    margin: 0 0.25rem;
+    background: #808080;
+}
+.popup-wrap-inviteApp{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.5)
+}
+.popup-wrap-inviteApp .popup{
+  position: absolute;
+  width: 17.25rem;
+  bottom: 0.75rem;
+  left: 50%;
+  margin-left:-8.625rem;
+  background: #fff;
+  border-radius: 0.35rem; 
+  overflow: hidden;
+  text-align: center;
+}
+.popup-wrap-inviteApp .title{
+  font-weight: bold;
+  line-height: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.popup-wrap-inviteApp .text{
+  color: #4e4e4e;
+  line-height: 1.15rem;
+}
+.popup-wrap-inviteApp .popup-foot{
+  padding-bottom: 0.9rem;
+  margin-top: 1.25rem;
+}
+.popup-wrap-inviteApp .popup-foot .btn{
+  display: inline-block;
+  width: 5.75rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  border:1px solid #12A585;
+  border-radius: 1.8rem;
+  margin: 0 0.825rem;
+  color: #12A585 
+}
+.popup-wrap-inviteApp .popup-foot .btn-confirm{
+  background: #12A585;
+  color: #fff
+}
+.buffer-box1{
+	height: 0.7rem;
+	margin-top: 0.6rem;
+}
+.buffer-box2{
+	width: 5.25rem;
+	height: 0.6rem;
+	margin-top: 0.4rem;
+}
+.buffer-box3{
+	margin-top: 0.95rem!important;
+}
+.buffer-box4{
+	display: block;
+	height: 0.9rem;
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+.buffer-box5{
+	display: block;
+	width: 5rem;
+	height: 0.6rem;
+	margin-top: 0.2rem;
+}
+.header-home{
+	position: relative;
+	height: auto;
+	overflow:hidden;
+}
+.header-search-wrap{
+	display: block;
+	position: relative;
+	top:0;
+	right: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.20);
+	border-radius: 4px;
+	padding-left: 2rem;
+	padding-right: 2.3rem;
+	background-image:url(../img/search-new.svg) ;
+	background-repeat:no-repeat ;
+	background-size:1.1rem ;
+	background-position:0.4rem center ;
+	overflow: hidden;
+	margin: 0.5rem 0.75rem;
+}
+.gotop{
+	display: none;
+	position: fixed;
+	bottom: 3.5rem;
+	right: 1.1rem;
+	background: url(../img/gotop.svg) no-repeat center;
+	background-size:80% ;
+	width: 1.5rem;
+	height: 1.5rem;
+	z-index: 10;
+}
+.buffer-box6{
+	display: block;
+	width: 15rem;
+	height: 1.1rem;
+}
+.buffer-box7{
+	display: block;
+	width: 8rem;
+	height: 0.7rem;
+	margin: 0.3rem 0;
+}
+.buffer-box8{
+	display: block;
+	width: 7rem;
+	height: 0.8rem;
+	margin: 0.3rem 0;
+}
+.buffer-box9{
+	display: block;
+	width: 2rem;
+	height: 1.1rem;
+}
+.productProject-home-list{
+	/*width: 17rem;
+	 margin: 1rem auto 0 0.9rem;*/
+	margin-top: 1rem;
+    white-space:nowrap;
+    padding-bottom:0.6rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.productProject-home-list .productProject-item:first-child{
+	margin-left: 0.75rem;
+}
+.productProject-item{
+	display: inline-block;
+	margin: 0 0.5rem 0 0;
+	width: 6.9rem;
+	vertical-align: middle;
+}
+.productProject-item .image{
+	height: 6.9rem;
+}
+.productProject-item .image .tag{
+	bottom: 0.25rem;
+}
+.productProject-item .image .viewCount{
+	bottom: 0.25rem;
+}
+.popup-wrap-index-activty .popup{
+	position: fixed;
+	width: 15.9rem;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	border-radius: 0.2rem;
+	overflow: hidden;
+}
+.popup-wrap-index-activty{
+	background-color: rgba(0,0,0,0.3);
+	z-index: 210;
+}
+.popup-wrap-index-activty .close{
+	background: transparent;
+	width: 2rem;
+	height: 2rem;
+}
+.popup-wrap-index-activty .getCoupon{
+	height: 5rem;
+	background: transparent;
+	opacity: 0.3;
+}
+.index-type-list{
+	padding-top: 0.5rem;
+}
+.index-type-list > li{
+	width: 25%;
+	height: 3rem;
+	padding: 0.5rem 0;
+}
+.index-type-list > li > .image{
+	display: inline-block;
+	width: 1.6rem;
+	height:1.6rem;
+	margin-bottom: 0.1rem;
+}
+.index-type-list > li > .title{
+	opacity: 0.87;
+}
+.index-type-list > li.active{
+	font-weight: bold;
+}
+.popup-wrap-index-activty-all{
+	background-color: rgba(0,0,0,0.3);
+	z-index: 210;
+}
+.popup-wrap-index-activty-all .popup{
+	position: fixed;
+	width: 15.25rem;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+.popup-wrap-index-activty-all .popup .popup-index-activty-all{
+	height: 17.5rem;
+}
+.popup-wrap-index-activty-all .popup .closePopup{
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: 2.45rem auto 0 auto;
+}
+.banner-buffer {
+	height: 8rem;
+}
+.banner-buffer .loading-anim-wrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -0.75rem;
+	margin-left: -0.75rem;
+}

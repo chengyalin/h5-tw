@@ -1,0 +1,276 @@
+.writeAppraise-part .part{
+    background:#ffffff;
+    border-top:1px solid #cdcdcd;
+    border-bottom:1px solid #cdcdcd;
+}
+.writeAppraise-part .title{
+    margin: 0.7rem 0.75rem 0.4rem 0.75rem; 
+}
+.writeAppraise-part .no-border{
+    border: none!important;
+}
+.writeAppraise-part .image-list{
+    padding-left: 0.25rem;
+}
+.writeAppraise-part .image,
+.writeAppraise-part .add-image2{
+	position: relative;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.25rem;
+}
+.writeAppraise-part .add-image{
+    display: block;
+    width: 5.2rem;
+    height: 1.2rem;
+    text-align: center;
+    line-height: 1.2rem;
+    margin: 1.25rem auto 0.55rem auto;
+    color: #23e8bd;
+    font-size: 0.7rem;
+    border:1px solid #23e8bd;
+}
+.writeAppraise-part .add-image2{
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 0 0 1px #808080;
+}
+.writeAppraise-part .add-image2::before,
+.writeAppraise-part .add-image2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.55rem;
+    height: 0.15rem;
+    background: #979797;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.writeAppraise-part .add-image2::after{
+    height: 2.55rem;
+    width: 0.15rem;
+}
+.writeAppraise-part .image-wrap{
+    display: inline-block;
+    position: relative;
+}
+.writeAppraise-part .image-close{
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 0.35rem;
+    right: 0.35rem;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+.writeAppraise-part .image-close::before,
+.writeAppraise-part .image-close::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.6rem;
+    height: 1px;
+    background: #fff;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.writeAppraise-part .image-close::after{
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.writeAppraise-part .words,
+.writeAppraise-part .textarea-show{
+    display: block;
+    outline: none;
+    border: none;
+    padding: 0!important;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    height: 5.45rem;
+    width: 17.25rem;
+    margin: 0.55rem auto 0.45rem auto;
+}
+.writeAppraise-part .words:focus{
+	border: none;
+	outline: none;
+}
+.writeAppraise-part .placeholder-style{
+    color: #cdcdcd;
+}
+.writeAppraise-part .popup-wrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+.writeAppraise-part .popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    border-radius:2px;
+    width:15.4rem;
+    color: #808080;
+    font-size: 0.6rem;
+    z-index: 20;
+}
+.writeAppraise-part .popup .item{
+    position: relative;
+    margin: 0 1.3rem 0.75rem 2.1rem;
+    line-height: 0.85rem;
+}
+.writeAppraise-part .popup .item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -0.85rem;
+    top: 0.2rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 100%;
+    border: 1px solid #23e8bd;
+}
+.writeAppraise-part .popup .label{
+    font-size: 0.7rem;
+    text-align: center;
+    color: #000;
+    margin: 1.1rem 0;
+}
+.writeAppraise-part .popup-firstTip-swiper{
+  height: 7.75rem;
+  margin-bottom: 0.75rem;
+}
+.writeAppraise-part .firstTip-title{
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem
+}
+.writeAppraise-part .firstTipBtn{
+  position: absolute;
+  bottom: -0.375rem;
+  left: 0;
+  right: 0;
+}
+.writeAppraise-part .popup-firstTip-content {
+  line-height: 1.5
+}
+.writeAppraise-part .star-edit-wrap{
+    display: inline-block;
+    vertical-align: middle;
+}
+.writeAppraise-part .edit-star{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.65rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.writeAppraise-part .star-item{
+    margin-left: 0.8rem;
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+.writeAppraise-part .star-item > span{
+    font-size: 0.7rem;
+    display: inline-block;
+    vertical-align: middle;
+    width: 4rem;
+}
+.writeAppraise-part .product-info{
+    padding: 0.8rem;
+}
+.writeAppraise-part .product-info .img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.75rem;
+}
+.writeAppraise-part .product-info p{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.7rem;
+    width: 12.5rem;
+}
+.writeAppraise-part .afterSubmit{
+    position: absolute;
+    top: 8rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #cdcdcd;
+    line-height: 1.8;
+    z-index: 30;
+}
+.writeAppraise-part .afterSubmit img{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-bottom: 0.25rem;
+    margin-top: 4rem;
+}
+.writeAppraise-part .foot-block{
+    height: 2.4rem;
+}
+.writeAppraise-part .popup-getCoupon{
+  padding: 1.125rem 0 1rem 0;
+  border-radius: 0.3rem;
+}
+.writeAppraise-part .popup-getCoupon .bg{
+  width: 11.325rem;
+  height: 8.65rem;
+  margin-bottom: 1.05rem;
+}
+.writeAppraise-part .get-coupon-btn{
+  background: #2A7197;
+  height: 2rem;
+  line-height: 2rem;
+  width: 11.2rem;
+  border-radius: 0.2rem;
+  margin: 0 auto;
+}
+.writeAppraise-part .closePopup3Btn{
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 2.45rem auto 0 auto;
+}
+.writeAppraise-part #image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+}
+.progress-bar{
+	position: absolute;
+	height: 0.3rem;
+	width:4rem;
+	background: #C5C5C5;
+	bottom: 0.25rem;
+	left: 0.25rem;
+}
+.progress-bar .progress-active{
+	position: absolute;
+	display: block;
+	height: 100%;
+	background: #23E8BD;
+}
+
+.writeAppraise-part .image-list .loading-wrap{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	opacity: 0.7;
+	background: #FFFFFF;
+}

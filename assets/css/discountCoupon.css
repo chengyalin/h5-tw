@@ -1,0 +1,276 @@
+.font-Regular{
+	font-family: PingFangSC-Regular;
+}
+.discountCoupon-part .header{
+	display: block;
+	width: 100%;
+	height: 8.625rem;
+	background-image:url(../../activity/img/discountCoupon/discountCouponHeader.jpg) ;
+	background-size:contain ;
+	background-repeat:no-repeat ;
+	background-position:center ;
+}
+.discountCoupon-part .footer{
+	padding-bottom: 0.8rem;
+	background: #FFD335;
+}
+.discountCoupon-part .footer > img{
+	width: 1.75rem;
+}
+.discountCoupon-part .tip1{
+	display: block;
+	color: #4A4A4A;
+	background: #D8D8D8;
+	width: 8.45rem;
+	height: 1.35rem;
+	text-align: center;
+	line-height: 1.35rem;
+	margin: 1.75rem auto 2.225rem auto;
+}
+.discountCoupon-part .tip2{
+	position: relative;
+	display: block;
+	color: #020202;
+	letter-spacing:0.2rem;
+	width: 5rem;
+	line-height: 1;
+	margin: 0.2rem auto 1.1rem auto;
+	text-align: center;
+}
+.discountCoupon-part .tip2:after{
+	content: "";
+	position: absolute;
+	left: 0.1rem;
+	right: 0.2rem;
+	bottom: 0;
+	height: 0.36rem;
+	background: #FBDB56;
+	z-index: -1;
+}
+.discountCoupon-part .main-center:after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 4.4rem;
+	background: #FFD335;
+	z-index: 1;
+}
+.discountCoupon-part .coupon-wrap{
+	z-index: 2;
+	position: relative;
+	width: 12.825rem;
+	height: 11.025rem;
+	margin: 0 auto;
+	background-image: url(../../activity/img/discountCoupon/discountCouopn-bg1.png);
+}
+.discountCoupon-part .coupon-wrap .camera{
+	display: block;
+	position: absolute;
+	width: 1.9rem;
+	bottom: -0.5rem;
+	right: -0.85rem;
+}
+.discountCoupon-part .coupon-wrap .get{
+	display: block;
+	position: absolute;
+	width: 1.875rem;
+	top: 0;
+	right: 0;
+}
+.discountCoupon-part  .coupon-wrap .main{
+	color: #50E3C2 ;
+	padding: 2.1rem 0 0.45rem 0;
+	border-bottom: 1px solid #50E3C2;
+	margin: 0 1.55rem;
+}
+.discountCoupon-part  .coupon-wrap .main .text1{
+	font-family: PingFangSC-Semibold;
+	font-size: 2.575rem;
+	letter-spacing: 0.12rem;
+	line-height: 1;
+	margin-left: 0.3rem;
+}
+.discountCoupon-part  .coupon-wrap .main .text2{
+	position: relative;
+	top: -0.3rem;
+	font-family: PingFangSC-Semibold;
+	font-size:1.632rem;
+	line-height: 1;
+	margin-left: 0.2rem;
+	margin-right: 0.725rem;
+}
+.discountCoupon-part  .coupon-wrap .main .text{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.discountCoupon-part  .coupon-wrap .main .text3 .child1{
+	display: block;
+	width: 1.85rem;
+	height: 0.875rem;
+	text-align: center;
+	line-height: 0.875rem;
+	font-size: 0.5rem;
+	color: #fff;
+	background:#50E3C2;;
+}
+.discountCoupon-part  .coupon-wrap .main .text3 .child2{
+	font-size: 0.6rem;
+}
+.discountCoupon-part  .coupon-wrap .tip{
+	color: #50E3C2;
+	margin-top: 0.35rem;
+	margin-bottom: 1rem;
+}
+.discountCoupon-part  .coupon-wrap .btn{
+	display: block;
+	margin: 0 auto;
+	height: 2.225rem;
+	line-height: 2.225rem;
+	width: 7.7rem;
+	text-align: center;
+	border-radius: 2.225rem;
+	background: #DADADA;
+	font-size: 0.9rem;
+}
+.discountCoupon-part  .coupon-wrap .btn1{
+	background: -webkit-linear-gradient(-185deg, #FEE100, #FCC000);
+    background: -o-linear-gradient(-185deg, #FEE100, #FCC000); 
+    background: -moz-linear-gradient(-185deg, #FEE100, #FCC000);
+    background: linear-gradient(-185deg, #FEE100, #FCC000);
+}
+.discountCoupon-part .rule-wrap{
+	color: #000;
+	letter-spacing: 0.05rem;
+	padding-top: 1.15rem;
+	padding-bottom: 2rem;
+	background: #FFD335;
+}
+.discountCoupon-part .rule-wrap .title{
+	text-align: center;
+	margin-bottom: 0.925rem;
+}
+.discountCoupon-part .rule-wrap .title > span{
+	display: inline-block;
+	vertical-align: middle;
+	margin:  0 0.48rem;
+}
+.discountCoupon-part .rule-wrap .title:before,
+.discountCoupon-part .rule-wrap .title:after{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0.825rem;
+	height: 0.175rem;
+	border-radius: 0.175rem;
+	background: -webkit-linear-gradient(left, #FAD961 , #57E4C5 );
+	background: -o-linear-gradient(right, #FAD961, #57E4C5);
+	background: -moz-linear-gradient(right, #FAD961, #57E4C5); 
+	background: linear-gradient(to right, #FAD961 , #57E4C5); 
+}
+.discountCoupon-part .rule-wrap .title:after{
+	background: -webkit-linear-gradient(left, #57E4C5 , #FAD961 );
+	background: -o-linear-gradient(right, #57E4C5, #FAD961);
+	background: -moz-linear-gradient(right, #57E4C5, #FAD961); 
+	background: linear-gradient(to right, #57E4C5 , #FAD961); 
+}
+.discountCoupon-part .rule-wrap .rule-main{
+	margin-left: 1.75rem;
+	background:url(../../activity/img/discountCoupon/discountCoupon-radio.png) no-repeat left center;
+	background-size:2.25rem ;
+	padding-left: 3.825rem;
+}
+.discountCoupon-part .rule-wrap .rule-main > p{
+	margin-bottom: 0.4rem;
+}
+.discountCoupon-part .orderCount-wrap{
+	height: 0.125rem;
+	width: 10rem;
+	margin: 2.6rem auto 1.6rem auto;
+	text-align: center;
+	background: #E8E8E8;
+}
+.discountCoupon-part .orderCount-wrap.active2:before,
+.discountCoupon-part .orderCount-wrap.active3:before,
+.discountCoupon-part .orderCount-wrap.active3:after{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 50%;
+	left: 0;
+	top: 0;
+	height: 0.125rem;
+	background: #FBDB56;
+}
+.discountCoupon-part .orderCount-wrap.active3:after{
+	left: auto;
+	right: 0;
+}
+.discountCoupon-part .orderCount-wrap .orderCount-item{
+	bottom: -0.525rem;
+	position: absolute;
+	height: 1.175rem;
+	width: 1.175rem;
+	border-radius: 100%;
+	background: #E8E8E8;
+	margin-left: -0.5875rem;
+	z-index: 10;
+}
+.discountCoupon-part .orderCount-wrap.active1 .orderCount-item:first-child,
+.discountCoupon-part .orderCount-wrap.active2 .orderCount-item:first-child,
+.discountCoupon-part .orderCount-wrap.active3 .orderCount-item:first-child,
+.discountCoupon-part .orderCount-wrap.active2 .orderCount-item:nth-child(2),
+.discountCoupon-part .orderCount-wrap.active3 .orderCount-item:nth-child(2),
+.discountCoupon-part .orderCount-wrap.active3 .orderCount-item:nth-child(3){
+	background: #FBDB56;
+}
+.discountCoupon-part .orderCount-wrap .orderCount-item:first-child{
+	left: 0;
+}
+.discountCoupon-part .orderCount-wrap .orderCount-item:nth-child(2){
+	left: 50%;
+}
+.discountCoupon-part .orderCount-wrap .orderCount-item:nth-child(3){
+	left: 100%;
+}
+.discountCoupon-part .orderCount-wrap .orderCount-item:before{
+	content: "1";
+	position: absolute;
+	top: -1rem;
+	font-size: 0.6rem;
+	color: #000;
+	left: 0;
+	right: 0;
+	text-shadow: 0 0.025rem 0.05rem rgba(0,0,0,0.50);
+}
+.discountCoupon-part .orderCount-wrap .orderCount-item:nth-child(2):before{
+	content: "2";
+}
+.discountCoupon-part .orderCount-wrap .orderCount-item:nth-child(3):before{
+	content: "3";
+}
+.discountCoupon-part .orderCount-wrap .orderCount-item:after{
+	content: "";
+	position: absolute;
+	width: 0.39rem;
+	height: 0.39rem;
+	border-radius: 100%;
+	top: 50%;
+	margin-top: -0.195rem;
+	left: 50%;
+	margin-left: -0.195rem;
+	background: #fff;
+	box-shadow: 0 0.05rem 0.1rem 0 rgba(131,119,18,0.46);
+}
+.discountCoupon-part .cant-wrap{
+	font-family: PingFangSC-Semibold;
+	font-size: 0.7rem;
+	color: #50E3C2;
+	letter-spacing: 0.2rem;
+	padding-top: 3rem;
+}
+.discountCoupon-part .cant-wrap> p{
+	margin-bottom: 0.9rem;
+}

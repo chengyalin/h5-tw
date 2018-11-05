@@ -1,0 +1,38 @@
+.message-list li {
+	position: relative;
+	overflow: hidden;
+	padding: 0.6rem 0;
+	margin-left: 0.75rem;
+}
+
+.message-list li .icon {
+	display: block;
+	float: left;
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 100%;
+	margin-right: 0.25rem;
+}
+
+.message-list li .content {
+	margin-left: 2.9rem;
+	margin-right: 2.9rem;
+}
+.message-list li .type {
+	font-size: 0.8rem;
+	color: #000;
+	margin-bottom: 0.25rem;
+	font-weight: bold
+}
+.message-list li .number {
+	float: right;
+	border-radius: 1rem;
+	background: #ff0053;
+	font-size: 0.6rem;
+	color: #fff;
+	line-height: 0.6rem;
+	padding: 0.2rem 0.35rem;
+	margin-right: 0.55rem;
+	max-width: 2.75rem;
+	margin-top: 0.6rem;
+}

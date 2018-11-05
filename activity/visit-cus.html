@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="探物">  
+		<meta name="description" content="探物">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">     
+		<meta content="yes" name="apple-mobile-web-app-capable">     
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">     
+		<meta content="telephone=no" name="format-detection">
+		<title>客户信息</title>
+		<script src="../assets/js/init.js?v=1.5.5" type="text/javascript" charset="utf-8"></script>
+		<link rel="icon" type="image/x-icon" href="../assets/img/logo.png"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.user-info-list{
+				list-style-type: none;
+			}
+			.user-info-list li{
+				font-size: 14px;
+				margin-bottom: 2px;
+			}
+			.user-info-list .image{
+				display: block;
+				width: 40px;
+				height: 40px;
+				background-size: cover ;
+				background-position:center ;
+				background-repeat:no-repeat ;
+				border-radius: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page" v-cloak >
+			<ul class="user-info-list">
+				<li v-for="(item,index) in mainData">
+					<p v-if="index == 'userHeadThumb'">
+						<span class="image" :style="{'background-image':'url('+item+')'}"></span>
+					</p>
+					<p v-else>{{index}} : {{item}}</p>
+				</li>
+			</ul>
+		</div>
+		<script src="../assets/js/browser.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/vue-easy-toast.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/md5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/public.js?v=1.5.4" type="text/javascript" charset="utf-8"></script>
+		<script type="text/babel">
+			function sendMessage(type, data,iframeKey) {
+			    const params = {};
+			    params.type = type;
+			    params.data = data;
+			    params.resource = 'csbridge';
+			    params.iframeKey = iframeKey; // 从url参数获取，示例假设值为1
+			    window.parent.postMessage(JSON.stringify(params), '*');
+			  }
+			var page = new Vue({
+				el:'#page',
+	            data: {
+	            		askData:{},
+	            		mainData:[],
+	            		test:{}
+	            },
+	            mounted: function(){
+	            		var that = this;
+          	 		that.askData.params = getUrlParam("params");
+          	 		that.askData.key = getUrlParam("key");
+          	 		var iframeKey = getUrlParam("iframeKey");
+          	 		sendMessage('updateHeight', 600);
+          	 		postRequest('https://150.api.tanwuapp.com/minialiapp/user/decrypt-cinfo',that.askData).then((res) => {
+	            			if(res.details){
+	            				that.mainData = res.details.extInfo;
+	            				sendMessage('updateUserInfo', {"userId" : that.mainData.userId, "userName" :that.mainData.userName},iframeKey);
+	            			}
+	            		});
+          	 	}
+			});
+		</script>
+	</body>
+</html>

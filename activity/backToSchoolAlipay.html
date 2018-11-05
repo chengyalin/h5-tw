@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>开学季 发福利</title>
+		<script type="text/javascript">
+			document.documentElement.style.fontSize = window.innerWidth/18.75 + 'px'
+		</script>
+		<link rel="icon" type="image/x-icon" href="../assets/img/logo.png"/>
+		<script type="text/javascript" src="https://appx/web-view.min.js"></script>
+		<style type="text/css">
+			body,div{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: #FFFFFF;
+			}
+			page{
+				background: #FFFFFF;
+			}
+			.width-full{
+				width: 100%;
+			}
+			.relative{
+				position: relative;
+			}
+			.block{
+				display: block;
+			}
+			.backToSchool-page .product-list{
+				position: absolute;
+				top: 4.2rem;
+				left: 1.2rem;
+			}
+			.backToSchool-page .product-list .product-item{
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 0.2rem;
+				margin-bottom: 1.5rem;
+				width: 8rem;
+				height: 11rem;
+			} 
+		</style>
+	</head>
+	<body>
+		<div class="backToSchool-page">
+			<img class="width-full block" src="https://resource.tanwuapp.com/Fnyrit5w8gZDxKy1C_4P6FYC3wST"/>
+			<div class="relative">
+				<img class="width-full block" src="https://resource.tanwuapp.com/FrMMcX1NoqXd4RyabN8HC6ZJnbLl"/>
+				<div class="product-list">
+					<div class="product-item" onclick="go('75')"></div>
+					<div class="product-item" onclick="go('55')"></div>
+					<div class="product-item" onclick="go('278')"></div>
+					<div class="product-item" onclick="go('62')"></div>
+					<div class="product-item" onclick="go('223')"></div>
+					<div class="product-item" onclick="go('228')"></div>
+				</div>
+			</div>
+			<img class="width-full block" src="https://resource.tanwuapp.com/FuX5x7-DJAID4norSgifJo_vZIF6"/>
+		</div>
+		<script src="../assets/js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function getUrlParam(name) {
+				var url = window.location.search;
+			    var theRequest = new Object();   
+			    if (url.indexOf("?") != -1) {   
+			        var str = url.substr(1);   
+			        strs = str.split("&");   
+			        for(var i = 0; i < strs.length; i ++) {   
+			             theRequest[strs[i].split("=")[0]]=decodeURI(strs[i].split("=")[1]); 
+			        }   
+			    };
+			    return name == 'all'?theRequest:theRequest[name];   
+			};
+			var reqStr = {
+        			activityName:'backToSchool',
+        			source:getUrlParam('source') || 'alipay'
+        		};
+			axios({
+				method: 'post',
+				url: 'https://prepub.api.tanwuapp.com/iOS/2.0.0' + '/system/clientLog',
+				data: {
+					platform:'h5',
+					type:'info',
+					url:'',
+					reqStr:JSON.stringify(reqStr)
+				},
+				headers: {'Content-Type': 'application/json',version:'2.0.0',key:'3d09d2c6094047ab8794821fa1378631'},
+			}).then(function (response) {
+				console.log(response);
+			})
+			function go(id){
+				my.getEnv(function(res) {
+					if(res.miniprogram || res.miniProgram){
+						my.navigateTo({url: '/pages/productDetails/productDetails?productId='+id});
+					}else{
+						window.open('alipays://platformapi/startapp?appId=2017082408357898&page=pages/productDetails/productDetails&query=productId%3d'+id)
+					}
+				});
+			}
+		</script>
+	</body>
+</html>
